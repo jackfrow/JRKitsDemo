@@ -13,6 +13,7 @@
 		92311A862072205A0016D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311A852072205A0016D9B7 /* Assets.xcassets */; };
 		92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A872072205A0016D9B7 /* LaunchScreen.storyboard */; };
 		92311A8C2072205B0016D9B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A8B2072205B0016D9B7 /* main.m */; };
+		92504735207225C5002D750D /* TEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504734207225C5002D750D /* TEST.m */; };
 		92C817CD207220DD0003F0BD /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C817CC207220DD0003F0BD /* test.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		92311A882072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92311A8A2072205A0016D9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92311A8B2072205B0016D9B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92504733207225C5002D750D /* TEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEST.h; sourceTree = "<group>"; };
+		92504734207225C5002D750D /* TEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST.m; sourceTree = "<group>"; };
 		92C817CB207220DD0003F0BD /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		92C817CC207220DD0003F0BD /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,9 +78,19 @@
 			path = JRKits;
 			sourceTree = "<group>";
 		};
+		92504732207225B0002D750D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				92504733207225C5002D750D /* TEST.h */,
+				92504734207225C5002D750D /* TEST.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		92C817C9207220CA0003F0BD /* JRTools */ = {
 			isa = PBXGroup;
 			children = (
+				92504732207225B0002D750D /* Test */,
 				92C817CA207220CA0003F0BD /* Demo */,
 			);
 			name = JRTools;
@@ -164,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92504735207225C5002D750D /* TEST.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
 				92C817CD207220DD0003F0BD /* test.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
