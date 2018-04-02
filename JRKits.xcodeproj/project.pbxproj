@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A7D2072205A0016D9B7 /* AppDelegate.m */; };
+		92311A812072205A0016D9B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A802072205A0016D9B7 /* ViewController.m */; };
+		92311A842072205A0016D9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A822072205A0016D9B7 /* Main.storyboard */; };
+		92311A862072205A0016D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311A852072205A0016D9B7 /* Assets.xcassets */; };
+		92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A872072205A0016D9B7 /* LaunchScreen.storyboard */; };
+		92311A8C2072205B0016D9B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A8B2072205B0016D9B7 /* main.m */; };
+		92504755207235D6002D750D /* JRBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250474C207235D6002D750D /* JRBasicModel.m */; };
+		92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504750207235D6002D750D /* JRBasicTableViewController.m */; };
+		92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504751207235D6002D750D /* JRBasicCollectionViewController.m */; };
+		9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504759207238BB002D750D /* JRBasicTableViewCell.m */; };
+		9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250475C207238D8002D750D /* JRBasicCollectionViewCell.m */; };
+		F36459308B44C6B074CB0E16 /* libPods-JRKits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE9527ED46E3A667081D728 /* libPods-JRKits.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7DE9527ED46E3A667081D728 /* libPods-JRKits.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRKits.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92311A792072205A0016D9B7 /* JRKits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRKits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92311A7C2072205A0016D9B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		92311A7D2072205A0016D9B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		92311A7F2072205A0016D9B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		92311A802072205A0016D9B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		92311A832072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92311A852072205A0016D9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92311A882072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92311A8A2072205A0016D9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92311A8B2072205B0016D9B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92504749207235D6002D750D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		9250474C207235D6002D750D /* JRBasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBasicModel.m; sourceTree = "<group>"; };
+		9250474D207235D6002D750D /* JRBasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBasicModel.h; sourceTree = "<group>"; };
+		9250474F207235D6002D750D /* JRBasicCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBasicCollectionViewController.h; sourceTree = "<group>"; };
+		92504750207235D6002D750D /* JRBasicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBasicTableViewController.m; sourceTree = "<group>"; };
+		92504751207235D6002D750D /* JRBasicCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBasicCollectionViewController.m; sourceTree = "<group>"; };
+		92504752207235D6002D750D /* JRBasicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBasicTableViewController.h; sourceTree = "<group>"; };
+		92504758207238BB002D750D /* JRBasicTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBasicTableViewCell.h; sourceTree = "<group>"; };
+		92504759207238BB002D750D /* JRBasicTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBasicTableViewCell.m; sourceTree = "<group>"; };
+		9250475B207238D8002D750D /* JRBasicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBasicCollectionViewCell.h; sourceTree = "<group>"; };
+		9250475C207238D8002D750D /* JRBasicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBasicCollectionViewCell.m; sourceTree = "<group>"; };
+		A8554D6539FB41115E14FC80 /* Pods-JRKits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRKits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRKits/Pods-JRKits.debug.xcconfig"; sourceTree = "<group>"; };
+		B0310B35B8409575038E27BC /* Pods-JRKits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRKits.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRKits/Pods-JRKits.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92311A762072205A0016D9B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36459308B44C6B074CB0E16 /* libPods-JRKits.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040AE551685AB48BACFECB23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DE9527ED46E3A667081D728 /* libPods-JRKits.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92311A702072205A0016D9B7 = {
+			isa = PBXGroup;
+			children = (
+				92311A7B2072205A0016D9B7 /* JRKits */,
+				92311A7A2072205A0016D9B7 /* Products */,
+				E77F2177B06484475D83FE85 /* Pods */,
+				040AE551685AB48BACFECB23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92311A7A2072205A0016D9B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92311A792072205A0016D9B7 /* JRKits.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92311A7B2072205A0016D9B7 /* JRKits */ = {
+			isa = PBXGroup;
+			children = (
+				92504746207235D6002D750D /* JRTools */,
+				92311A7C2072205A0016D9B7 /* AppDelegate.h */,
+				92311A7D2072205A0016D9B7 /* AppDelegate.m */,
+				92311A7F2072205A0016D9B7 /* ViewController.h */,
+				92311A802072205A0016D9B7 /* ViewController.m */,
+				92311A822072205A0016D9B7 /* Main.storyboard */,
+				92311A852072205A0016D9B7 /* Assets.xcassets */,
+				92311A872072205A0016D9B7 /* LaunchScreen.storyboard */,
+				92311A8A2072205A0016D9B7 /* Info.plist */,
+				92311A8B2072205B0016D9B7 /* main.m */,
+			);
+			path = JRKits;
+			sourceTree = "<group>";
+		};
+		92504746207235D6002D750D /* JRTools */ = {
+			isa = PBXGroup;
+			children = (
+				92504747207235D6002D750D /* EXPand */,
+				92504748207235D6002D750D /* Tools */,
+				9250474A207235D6002D750D /* DateExchange */,
+				9250474B207235D6002D750D /* Models */,
+				9250474E207235D6002D750D /* ViewControllers */,
+				92504753207235D6002D750D /* Views */,
+				92504754207235D6002D750D /* Categorys */,
+			);
+			path = JRTools;
+			sourceTree = SOURCE_ROOT;
+		};
+		92504747207235D6002D750D /* EXPand */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EXPand;
+			sourceTree = "<group>";
+		};
+		92504748207235D6002D750D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				92504749207235D6002D750D /* Singleton.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9250474A207235D6002D750D /* DateExchange */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DateExchange;
+			sourceTree = "<group>";
+		};
+		9250474B207235D6002D750D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9250474C207235D6002D750D /* JRBasicModel.m */,
+				9250474D207235D6002D750D /* JRBasicModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9250474E207235D6002D750D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9250474F207235D6002D750D /* JRBasicCollectionViewController.h */,
+				92504750207235D6002D750D /* JRBasicTableViewController.m */,
+				92504751207235D6002D750D /* JRBasicCollectionViewController.m */,
+				92504752207235D6002D750D /* JRBasicTableViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92504753207235D6002D750D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92504758207238BB002D750D /* JRBasicTableViewCell.h */,
+				92504759207238BB002D750D /* JRBasicTableViewCell.m */,
+				9250475B207238D8002D750D /* JRBasicCollectionViewCell.h */,
+				9250475C207238D8002D750D /* JRBasicCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92504754207235D6002D750D /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		E77F2177B06484475D83FE85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8554D6539FB41115E14FC80 /* Pods-JRKits.debug.xcconfig */,
+				B0310B35B8409575038E27BC /* Pods-JRKits.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92311A782072205A0016D9B7 /* JRKits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92311A8F2072205B0016D9B7 /* Build configuration list for PBXNativeTarget "JRKits" */;
+			buildPhases = (
+				5E1EC2CC69B29BABA7ACA1D6 /* [CP] Check Pods Manifest.lock */,
+				92311A752072205A0016D9B7 /* Sources */,
+				92311A762072205A0016D9B7 /* Frameworks */,
+				92311A772072205A0016D9B7 /* Resources */,
+				D7B4336342A5521BC6D5BEA9 /* [CP] Embed Pods Frameworks */,
+				FCAA139D845A80F02EB24788 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRKits;
+			productName = JRKits;
+			productReference = 92311A792072205A0016D9B7 /* JRKits.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92311A712072205A0016D9B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Jabber;
+				TargetAttributes = {
+					92311A782072205A0016D9B7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92311A742072205A0016D9B7 /* Build configuration list for PBXProject "JRKits" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92311A702072205A0016D9B7;
+			productRefGroup = 92311A7A2072205A0016D9B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92311A782072205A0016D9B7 /* JRKits */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92311A772072205A0016D9B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */,
+				92311A862072205A0016D9B7 /* Assets.xcassets in Resources */,
+				92311A842072205A0016D9B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E1EC2CC69B29BABA7ACA1D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRKits-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B4336342A5521BC6D5BEA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRKits/Pods-JRKits-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAA139D845A80F02EB24788 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRKits/Pods-JRKits-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92311A752072205A0016D9B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
+				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
+				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
+				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
+				92311A8C2072205B0016D9B7 /* main.m in Sources */,
+				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
+				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
+				92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92311A822072205A0016D9B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92311A832072205A0016D9B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92311A872072205A0016D9B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92311A882072205A0016D9B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92311A8D2072205B0016D9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92311A8E2072205B0016D9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92311A902072205B0016D9B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8554D6539FB41115E14FC80 /* Pods-JRKits.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GG7U7YKRY5;
+				INFOPLIST_FILE = JRKits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JR.JRKits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92311A912072205B0016D9B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0310B35B8409575038E27BC /* Pods-JRKits.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GG7U7YKRY5;
+				INFOPLIST_FILE = JRKits/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JR.JRKits;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92311A742072205A0016D9B7 /* Build configuration list for PBXProject "JRKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311A8D2072205B0016D9B7 /* Debug */,
+				92311A8E2072205B0016D9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92311A8F2072205B0016D9B7 /* Build configuration list for PBXNativeTarget "JRKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92311A902072205B0016D9B7 /* Debug */,
+				92311A912072205B0016D9B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92311A712072205A0016D9B7 /* Project object */;
+}
