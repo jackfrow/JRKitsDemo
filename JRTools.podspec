@@ -11,9 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/jackfrow/JRKitsDemo.git", :tag => s.version}
   s.source_files = "JRTools/**/*.{h,m}"
   s.requires_arc = true
- # s.dependency "AFNetworking"
- # s.dependency "SVProgressHUD"
- # s.dependency "JSONModel"
- # s.dependency "MJRefresh"
+  s.dependency "AFNetworking"
+  s.dependency "YYModel"
+
 
 end
