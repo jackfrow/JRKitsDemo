@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7AD207318760044F173 /* AppDelegate+SDK.m */; };
+		9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7B02073189B0044F173 /* AppDelegate+Notification.m */; };
+		9222F7BA20731D800044F173 /* BFMLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7B820731D800044F173 /* BFMLineView.m */; };
+		9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7BC20731FB20044F173 /* UIView+Category.m */; };
 		92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A7D2072205A0016D9B7 /* AppDelegate.m */; };
 		92311A812072205A0016D9B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A802072205A0016D9B7 /* ViewController.m */; };
 		92311A842072205A0016D9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A822072205A0016D9B7 /* Main.storyboard */; };
@@ -23,6 +27,15 @@
 
 /* Begin PBXFileReference section */
 		7DE9527ED46E3A667081D728 /* libPods-JRKits.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRKits.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9222F7AC207318760044F173 /* AppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SDK.h"; sourceTree = "<group>"; };
+		9222F7AD207318760044F173 /* AppDelegate+SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SDK.m"; sourceTree = "<group>"; };
+		9222F7AF2073189B0044F173 /* AppDelegate+Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notification.h"; sourceTree = "<group>"; };
+		9222F7B02073189B0044F173 /* AppDelegate+Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notification.m"; sourceTree = "<group>"; };
+		9222F7B3207319870044F173 /* JRModelAttach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelAttach.h; sourceTree = "<group>"; };
+		9222F7B820731D800044F173 /* BFMLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMLineView.m; sourceTree = "<group>"; };
+		9222F7B920731D800044F173 /* BFMLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFMLineView.h; sourceTree = "<group>"; };
+		9222F7BB20731FB20044F173 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		9222F7BC20731FB20044F173 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		92311A792072205A0016D9B7 /* JRKits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRKits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92311A7C2072205A0016D9B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92311A7D2072205A0016D9B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +81,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9222F7B420731CDB0044F173 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				9222F7B920731D800044F173 /* BFMLineView.h */,
+				9222F7B820731D800044F173 /* BFMLineView.m */,
+			);
+			name = Generic;
+			path = JRTools/Generic;
+			sourceTree = SOURCE_ROOT;
+		};
 		92311A702072205A0016D9B7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +129,7 @@
 		92504746207235D6002D750D /* JRTools */ = {
 			isa = PBXGroup;
 			children = (
+				9222F7B420731CDB0044F173 /* Generic */,
 				92504747207235D6002D750D /* EXPand */,
 				92504748207235D6002D750D /* Tools */,
 				9250474A207235D6002D750D /* DateExchange */,
@@ -120,6 +144,10 @@
 		92504747207235D6002D750D /* EXPand */ = {
 			isa = PBXGroup;
 			children = (
+				9222F7AC207318760044F173 /* AppDelegate+SDK.h */,
+				9222F7AD207318760044F173 /* AppDelegate+SDK.m */,
+				9222F7AF2073189B0044F173 /* AppDelegate+Notification.h */,
+				9222F7B02073189B0044F173 /* AppDelegate+Notification.m */,
 			);
 			path = EXPand;
 			sourceTree = "<group>";
@@ -144,6 +172,7 @@
 			children = (
 				9250474C207235D6002D750D /* JRBasicModel.m */,
 				9250474D207235D6002D750D /* JRBasicModel.h */,
+				9222F7B3207319870044F173 /* JRModelAttach.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +202,8 @@
 		92504754207235D6002D750D /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				9222F7BB20731FB20044F173 /* UIView+Category.h */,
+				9222F7BC20731FB20044F173 /* UIView+Category.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -311,13 +342,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
 				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
+				9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */,
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
 				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
 				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
+				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
+				9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */,
 				92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GG7U7YKRY5;
 				INFOPLIST_FILE = JRKits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JR.JRKits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GG7U7YKRY5;
 				INFOPLIST_FILE = JRKits/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JR.JRKits;
 				PRODUCT_NAME = "$(TARGET_NAME)";

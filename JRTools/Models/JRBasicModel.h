@@ -8,6 +8,9 @@
 
 #import <YYModel.h>
 
+/**
+ 实现yymodel协议，如果对象想要实现深度copy,只需调用YYCopy
+ */
 @interface JRBasicModel : NSObject<YYModel>
 
 @end

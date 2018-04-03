@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JRModelAttach.h"
 
-@interface JRBasicCollectionViewCell : UICollectionViewCell
+@interface JRBasicCollectionViewCell : UICollectionViewCell<JRModelAttach>
+
+
+/**
+ 将cell高度的计算放到cell自己内部
+ */
++ (CGSize)cellSizeWithModel:(JRBasicModel *)model atIndexPath:(NSIndexPath *)indexPath targetSize:(CGSize)targetSize;
 
 @end
