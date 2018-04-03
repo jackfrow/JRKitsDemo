@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JRTools"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Jabber 开发的一系列工具文件。"
   s.description  = "1、基本工具，网络请求，控制器基类。"
   s.homepage     = "https://github.com/jackfrow/JRKitsDemo"
