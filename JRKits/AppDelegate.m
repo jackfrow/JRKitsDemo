@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JRinitKit.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [JRinitKit run];//set start of the pragram.
+
     // Override point for customization after application launch.
     return YES;
 }

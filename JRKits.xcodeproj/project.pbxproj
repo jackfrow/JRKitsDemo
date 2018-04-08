@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */; };
+		453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1332207A0D9F00EBFB73 /* JRPersonalModel.m */; };
+		453C1336207A0DCA00EBFB73 /* JRPeronalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */; };
+		453C1338207A0DF600EBFB73 /* JRPersonalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453C1337207A0DF600EBFB73 /* JRPersonalTableViewCell.xib */; };
+		453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133B207A17D000EBFB73 /* JRinitKit.m */; };
+		453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133C207A17D000EBFB73 /* JRTabberConfig.m */; };
+		453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */; };
+		45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DB742079ADD700D36EB5 /* JRTools.podspec */; };
+		45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB782079B27100D36EB5 /* JRTableViewController.m */; };
+		45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */; };
 		9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7AD207318760044F173 /* AppDelegate+SDK.m */; };
 		9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7B02073189B0044F173 /* AppDelegate+Notification.m */; };
 		9222F7BA20731D800044F173 /* BFMLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7B820731D800044F173 /* BFMLineView.m */; };
 		9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7BC20731FB20044F173 /* UIView+Category.m */; };
 		92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A7D2072205A0016D9B7 /* AppDelegate.m */; };
 		92311A812072205A0016D9B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A802072205A0016D9B7 /* ViewController.m */; };
-		92311A842072205A0016D9B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A822072205A0016D9B7 /* Main.storyboard */; };
 		92311A862072205A0016D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311A852072205A0016D9B7 /* Assets.xcassets */; };
 		92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A872072205A0016D9B7 /* LaunchScreen.storyboard */; };
 		92311A8C2072205B0016D9B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A8B2072205B0016D9B7 /* main.m */; };
@@ -26,6 +35,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453C132E207A0D7C00EBFB73 /* JRPersonalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalTableViewCell.h; sourceTree = "<group>"; };
+		453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRPersonalTableViewCell.m; sourceTree = "<group>"; };
+		453C1331207A0D9F00EBFB73 /* JRPersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalModel.h; sourceTree = "<group>"; };
+		453C1332207A0D9F00EBFB73 /* JRPersonalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRPersonalModel.m; sourceTree = "<group>"; };
+		453C1334207A0DCA00EBFB73 /* JRPeronalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPeronalTableViewController.h; sourceTree = "<group>"; };
+		453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRPeronalTableViewController.m; sourceTree = "<group>"; };
+		453C1337207A0DF600EBFB73 /* JRPersonalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRPersonalTableViewCell.xib; sourceTree = "<group>"; };
+		453C133A207A17D000EBFB73 /* JRinitKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRinitKit.h; sourceTree = "<group>"; };
+		453C133B207A17D000EBFB73 /* JRinitKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRinitKit.m; sourceTree = "<group>"; };
+		453C133C207A17D000EBFB73 /* JRTabberConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTabberConfig.m; sourceTree = "<group>"; };
+		453C133D207A17D000EBFB73 /* JRTabberConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTabberConfig.h; sourceTree = "<group>"; };
+		453C1340207A21E700EBFB73 /* UINavigationBar+JRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JRAddtion.h"; sourceTree = "<group>"; };
+		453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JRAddtion.m"; sourceTree = "<group>"; };
+		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
+		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
+		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
+		45B5DB782079B27100D36EB5 /* JRTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRTableViewController.m; sourceTree = "<group>"; };
+		45B5DB7A2079B29100D36EB5 /* JRCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCollectionViewController.h; sourceTree = "<group>"; };
+		45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCollectionViewController.m; sourceTree = "<group>"; };
 		7DE9527ED46E3A667081D728 /* libPods-JRKits.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRKits.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9222F7AC207318760044F173 /* AppDelegate+SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SDK.h"; sourceTree = "<group>"; };
 		9222F7AD207318760044F173 /* AppDelegate+SDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SDK.m"; sourceTree = "<group>"; };
@@ -41,7 +69,6 @@
 		92311A7D2072205A0016D9B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		92311A7F2072205A0016D9B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		92311A802072205A0016D9B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		92311A832072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92311A852072205A0016D9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92311A882072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92311A8A2072205A0016D9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +108,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		453C132A207A0CDC00EBFB73 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				453C132D207A0CF800EBFB73 /* Cells */,
+				453C132C207A0CEF00EBFB73 /* ViewControllers */,
+				453C132B207A0CE900EBFB73 /* Models */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		453C132B207A0CE900EBFB73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				453C1331207A0D9F00EBFB73 /* JRPersonalModel.h */,
+				453C1332207A0D9F00EBFB73 /* JRPersonalModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		453C132C207A0CEF00EBFB73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				453C1334207A0DCA00EBFB73 /* JRPeronalTableViewController.h */,
+				453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		453C132D207A0CF800EBFB73 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				453C132E207A0D7C00EBFB73 /* JRPersonalTableViewCell.h */,
+				453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */,
+				453C1337207A0DF600EBFB73 /* JRPersonalTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		453C1339207A162C00EBFB73 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				453C133A207A17D000EBFB73 /* JRinitKit.h */,
+				453C133B207A17D000EBFB73 /* JRinitKit.m */,
+				453C133D207A17D000EBFB73 /* JRTabberConfig.h */,
+				453C133C207A17D000EBFB73 /* JRTabberConfig.m */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		45B5DB732079AD9100D36EB5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				45B5DB742079ADD700D36EB5 /* JRTools.podspec */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		9222F7B420731CDB0044F173 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,12 +196,13 @@
 		92311A7B2072205A0016D9B7 /* JRKits */ = {
 			isa = PBXGroup;
 			children = (
+				453C132A207A0CDC00EBFB73 /* Demo */,
+				45B5DB732079AD9100D36EB5 /* Support */,
 				92504746207235D6002D750D /* JRTools */,
 				92311A7C2072205A0016D9B7 /* AppDelegate.h */,
 				92311A7D2072205A0016D9B7 /* AppDelegate.m */,
 				92311A7F2072205A0016D9B7 /* ViewController.h */,
 				92311A802072205A0016D9B7 /* ViewController.m */,
-				92311A822072205A0016D9B7 /* Main.storyboard */,
 				92311A852072205A0016D9B7 /* Assets.xcassets */,
 				92311A872072205A0016D9B7 /* LaunchScreen.storyboard */,
 				92311A8A2072205A0016D9B7 /* Info.plist */,
@@ -129,6 +214,7 @@
 		92504746207235D6002D750D /* JRTools */ = {
 			isa = PBXGroup;
 			children = (
+				453C1339207A162C00EBFB73 /* AppRoot */,
 				9222F7B420731CDB0044F173 /* Generic */,
 				92504747207235D6002D750D /* EXPand */,
 				92504748207235D6002D750D /* Tools */,
@@ -148,6 +234,8 @@
 				9222F7AD207318760044F173 /* AppDelegate+SDK.m */,
 				9222F7AF2073189B0044F173 /* AppDelegate+Notification.h */,
 				9222F7B02073189B0044F173 /* AppDelegate+Notification.m */,
+				453C1340207A21E700EBFB73 /* UINavigationBar+JRAddtion.h */,
+				453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */,
 			);
 			path = EXPand;
 			sourceTree = "<group>";
@@ -181,9 +269,14 @@
 			isa = PBXGroup;
 			children = (
 				9250474F207235D6002D750D /* JRBasicCollectionViewController.h */,
-				92504750207235D6002D750D /* JRBasicTableViewController.m */,
 				92504751207235D6002D750D /* JRBasicCollectionViewController.m */,
+				92504750207235D6002D750D /* JRBasicTableViewController.m */,
 				92504752207235D6002D750D /* JRBasicTableViewController.h */,
+				45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */,
+				45B5DB772079B27100D36EB5 /* JRTableViewController.h */,
+				45B5DB782079B27100D36EB5 /* JRTableViewController.m */,
+				45B5DB7A2079B29100D36EB5 /* JRCollectionViewController.h */,
+				45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -278,9 +371,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */,
+				453C1338207A0DF600EBFB73 /* JRPersonalTableViewCell.xib in Resources */,
 				92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */,
 				92311A862072205A0016D9B7 /* Assets.xcassets in Resources */,
-				92311A842072205A0016D9B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,17 +436,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */,
 				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
 				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
+				453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */,
 				9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */,
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
 				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
 				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
+				453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */,
+				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
+				45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */,
+				45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */,
+				453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */,
 				9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */,
+				453C1336207A0DCA00EBFB73 /* JRPeronalTableViewController.m in Sources */,
 				92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,14 +462,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92311A822072205A0016D9B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92311A832072205A0016D9B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92311A872072205A0016D9B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -489,7 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GG7U7YKRY5;
+				DEVELOPMENT_TEAM = L63DQ52CN9;
 				INFOPLIST_FILE = JRKits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -505,7 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GG7U7YKRY5;
+				DEVELOPMENT_TEAM = L63DQ52CN9;
 				INFOPLIST_FILE = JRKits/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

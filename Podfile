@@ -4,5 +4,7 @@ target 'JRKits' do
 
   pod 'YYModel'
   pod 'AFNetworking'   
+  pod 'Masonry'
+  pod 'CYLTabBarController'
  
 end

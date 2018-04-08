@@ -14,16 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - CYLTabBarController (1.17.6)
+  - Masonry (1.1.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
+  - CYLTabBarController
+  - Masonry
   - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 72fe601e263e84031b3860c8d6cd2f2a5c96c9fd
+PODFILE CHECKSUM: 03662ef8354e989aba48487e005c21d89de7ead8
 
 COCOAPODS: 1.4.0
