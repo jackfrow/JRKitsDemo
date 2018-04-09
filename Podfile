@@ -6,5 +6,6 @@ target 'JRKits' do
   pod 'AFNetworking'   
   pod 'Masonry'
   pod 'CYLTabBarController'
+  pod 'MJRefresh'
  
 end

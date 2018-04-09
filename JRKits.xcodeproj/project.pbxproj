@@ -35,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4500427E207B0D1900308E45 /* JRTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTools.h; sourceTree = "<group>"; };
+		45004280207B189500308E45 /* JRListFetching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRListFetching.h; sourceTree = "<group>"; };
 		453C132E207A0D7C00EBFB73 /* JRPersonalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalTableViewCell.h; sourceTree = "<group>"; };
 		453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRPersonalTableViewCell.m; sourceTree = "<group>"; };
 		453C1331207A0D9F00EBFB73 /* JRPersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalModel.h; sourceTree = "<group>"; };
@@ -108,6 +110,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4500427F207B183500308E45 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */,
+				45004280207B189500308E45 /* JRListFetching.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		453C132A207A0CDC00EBFB73 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +164,7 @@
 				453C133B207A17D000EBFB73 /* JRinitKit.m */,
 				453C133D207A17D000EBFB73 /* JRTabberConfig.h */,
 				453C133C207A17D000EBFB73 /* JRTabberConfig.m */,
+				4500427E207B0D1900308E45 /* JRTools.h */,
 			);
 			path = AppRoot;
 			sourceTree = "<group>";
@@ -214,6 +226,7 @@
 		92504746207235D6002D750D /* JRTools */ = {
 			isa = PBXGroup;
 			children = (
+				4500427F207B183500308E45 /* Protocol */,
 				453C1339207A162C00EBFB73 /* AppRoot */,
 				9222F7B420731CDB0044F173 /* Generic */,
 				92504747207235D6002D750D /* EXPand */,
@@ -272,7 +285,6 @@
 				92504751207235D6002D750D /* JRBasicCollectionViewController.m */,
 				92504750207235D6002D750D /* JRBasicTableViewController.m */,
 				92504752207235D6002D750D /* JRBasicTableViewController.h */,
-				45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */,
 				45B5DB772079B27100D36EB5 /* JRTableViewController.h */,
 				45B5DB782079B27100D36EB5 /* JRTableViewController.m */,
 				45B5DB7A2079B29100D36EB5 /* JRCollectionViewController.h */,
@@ -420,9 +432,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JRKits/Pods-JRKits-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

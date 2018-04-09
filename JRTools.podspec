@@ -13,6 +13,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency "AFNetworking"
   s.dependency "YYModel"
-
-
+  s.dependency "Masonry"
+  s.dependency "CYLTabBarController"
+  s.dependency "MJRefresh"
 end
+

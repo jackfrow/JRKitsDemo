@@ -11,6 +11,8 @@
 #import "JRTabberConfig.h"
 #import "UINavigationBar+JRAddtion.h"
 
+
+
 @implementation JRinitKit
 
 +(void)run{
@@ -30,6 +32,7 @@
     [appDelegate.window makeKeyAndVisible];
     
 }
+
 
 
 
