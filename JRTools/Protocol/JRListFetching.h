@@ -10,7 +10,7 @@
 
 @protocol JRListFetching <NSObject>
 
-
+@optional
 /**
  是否启用下拉刷新，不启用的时候会隐藏掉下拉刷新.Default to YES.
  */

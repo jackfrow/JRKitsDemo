@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45004283207B450E00308E45 /* JRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45004282207B450E00308E45 /* JRViewController.m */; };
+		45004286207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 45004285207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m */; };
+		45004289207B513600308E45 /* UIColor+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 45004288207B513600308E45 /* UIColor+JRAddition.m */; };
+		4500428C207B52EC00308E45 /* UIViewController+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500428B207B52EC00308E45 /* UIViewController+JRAddition.m */; };
+		4500428F207B5AFE00308E45 /* UIImage+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4500428E207B5AFE00308E45 /* UIImage+JRAddition.m */; };
+		45004292207B600000308E45 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45004291207B600000308E45 /* TestViewController.m */; };
+		45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45004294207B697700308E45 /* JRBasicNavigationController.m */; };
 		453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */; };
 		453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1332207A0D9F00EBFB73 /* JRPersonalModel.m */; };
 		453C1336207A0DCA00EBFB73 /* JRPeronalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */; };
@@ -37,6 +44,20 @@
 /* Begin PBXFileReference section */
 		4500427E207B0D1900308E45 /* JRTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTools.h; sourceTree = "<group>"; };
 		45004280207B189500308E45 /* JRListFetching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRListFetching.h; sourceTree = "<group>"; };
+		45004281207B450E00308E45 /* JRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRViewController.h; sourceTree = "<group>"; };
+		45004282207B450E00308E45 /* JRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRViewController.m; sourceTree = "<group>"; };
+		45004284207B4BC300308E45 /* UIBarButtonItem+JRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JRAddtion.h"; sourceTree = "<group>"; };
+		45004285207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JRAddtion.m"; sourceTree = "<group>"; };
+		45004287207B513600308E45 /* UIColor+JRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JRAddition.h"; sourceTree = "<group>"; };
+		45004288207B513600308E45 /* UIColor+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JRAddition.m"; sourceTree = "<group>"; };
+		4500428A207B52EC00308E45 /* UIViewController+JRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JRAddition.h"; sourceTree = "<group>"; };
+		4500428B207B52EC00308E45 /* UIViewController+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JRAddition.m"; sourceTree = "<group>"; };
+		4500428D207B5AFE00308E45 /* UIImage+JRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JRAddition.h"; sourceTree = "<group>"; };
+		4500428E207B5AFE00308E45 /* UIImage+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JRAddition.m"; sourceTree = "<group>"; };
+		45004290207B600000308E45 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		45004291207B600000308E45 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		45004293207B697700308E45 /* JRBasicNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBasicNavigationController.h; sourceTree = "<group>"; };
+		45004294207B697700308E45 /* JRBasicNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBasicNavigationController.m; sourceTree = "<group>"; };
 		453C132E207A0D7C00EBFB73 /* JRPersonalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalTableViewCell.h; sourceTree = "<group>"; };
 		453C132F207A0D7C00EBFB73 /* JRPersonalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRPersonalTableViewCell.m; sourceTree = "<group>"; };
 		453C1331207A0D9F00EBFB73 /* JRPersonalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRPersonalModel.h; sourceTree = "<group>"; };
@@ -143,6 +164,8 @@
 			children = (
 				453C1334207A0DCA00EBFB73 /* JRPeronalTableViewController.h */,
 				453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */,
+				45004290207B600000308E45 /* TestViewController.h */,
+				45004291207B600000308E45 /* TestViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,6 +188,8 @@
 				453C133D207A17D000EBFB73 /* JRTabberConfig.h */,
 				453C133C207A17D000EBFB73 /* JRTabberConfig.m */,
 				4500427E207B0D1900308E45 /* JRTools.h */,
+				45004293207B697700308E45 /* JRBasicNavigationController.h */,
+				45004294207B697700308E45 /* JRBasicNavigationController.m */,
 			);
 			path = AppRoot;
 			sourceTree = "<group>";
@@ -289,6 +314,8 @@
 				45B5DB782079B27100D36EB5 /* JRTableViewController.m */,
 				45B5DB7A2079B29100D36EB5 /* JRCollectionViewController.h */,
 				45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */,
+				45004281207B450E00308E45 /* JRViewController.h */,
+				45004282207B450E00308E45 /* JRViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -309,6 +336,14 @@
 			children = (
 				9222F7BB20731FB20044F173 /* UIView+Category.h */,
 				9222F7BC20731FB20044F173 /* UIView+Category.m */,
+				45004284207B4BC300308E45 /* UIBarButtonItem+JRAddtion.h */,
+				45004285207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m */,
+				45004287207B513600308E45 /* UIColor+JRAddition.h */,
+				45004288207B513600308E45 /* UIColor+JRAddition.m */,
+				4500428A207B52EC00308E45 /* UIViewController+JRAddition.h */,
+				4500428B207B52EC00308E45 /* UIViewController+JRAddition.m */,
+				4500428D207B5AFE00308E45 /* UIImage+JRAddition.h */,
+				4500428E207B5AFE00308E45 /* UIImage+JRAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -458,16 +493,23 @@
 				9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */,
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
+				45004283207B450E00308E45 /* JRViewController.m in Sources */,
+				4500428C207B52EC00308E45 /* UIViewController+JRAddition.m in Sources */,
 				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
+				45004286207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m in Sources */,
 				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
 				453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */,
+				45004292207B600000308E45 /* TestViewController.m in Sources */,
 				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,
+				45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
 				45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */,
 				45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */,
+				45004289207B513600308E45 /* UIColor+JRAddition.m in Sources */,
 				453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */,
+				4500428F207B5AFE00308E45 /* UIImage+JRAddition.m in Sources */,
 				9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */,
 				453C1336207A0DCA00EBFB73 /* JRPeronalTableViewController.m in Sources */,
 				92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */,

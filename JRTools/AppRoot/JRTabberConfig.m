@@ -7,26 +7,7 @@
 //
 
 #import "JRTabberConfig.h"
-
-
-
-@interface JRBaseNavigationController : UINavigationController
-
-@end
-
-@implementation JRBaseNavigationController
-
-
-
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    if (self.viewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
-    [super pushViewController:viewController animated:animated];
-}
-
-@end
-
+#import "JRBasicNavigationController.h"
 #import "JRPeronalTableViewController.h"
 
 @interface JRTabberConfig()
@@ -69,7 +50,7 @@
         
         tempViewController = [[class alloc] init];
         
-        tempNavigationController = [[JRBaseNavigationController alloc] initWithRootViewController:tempViewController];
+        tempNavigationController = [[JRBasicNavigationController alloc] initWithRootViewController:tempViewController];
         
         [temps addObject:tempNavigationController];
         

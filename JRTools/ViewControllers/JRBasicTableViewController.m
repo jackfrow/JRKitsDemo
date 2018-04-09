@@ -8,7 +8,7 @@
 
 #import "JRBasicTableViewController.h"
 #import "JRModelAttach.h"
-
+#import <MJRefresh.h>
 
 
 @interface JRBasicTableViewController ()
@@ -18,6 +18,18 @@
  The map to store the relationship With Models and Cells.
  */
 @property (nonatomic,strong) NSMutableDictionary * modelCellBlockMap ;
+
+/**
+ 请求的Operation.
+ */
+@property (nonatomic, weak) NSOperation *fetchingOperation;
+
+
+/**
+ 请求位置
+ */
+@property (nonatomic, copy) NSString *offset;
+
 
 @end
 
@@ -60,6 +72,18 @@
 
 #pragma mark - UIViewController Methods
 
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.JHeaderRefreshEnable = YES;
+        self.JFooterRefreshEnable = YES;
+        self.AutomaticRefreshWhenPresented = YES;
+        self.offset = @"0";
+    }
+    return self;
+    
+}
+
 -(void)loadView{
     [super loadView];
     
@@ -76,8 +100,14 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    
     [self loadCellModelMapping];
+    [self _addRefreshViewIfNeeded];
+    
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [self _addRefreshViewIfNeeded];
     
 }
 
@@ -85,7 +115,7 @@
     
     self.tableView.delegate = nil;
     self.tableView.dataSource = nil;
-
+    [self.fetchingOperation cancel];
     
 }
 
@@ -244,6 +274,46 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     // should be implemented by subclass
+}
+
+
+#pragma mark - Private Methods
+
+- (void)_addRefreshViewIfNeeded
+{
+     __weak typeof(self) weakSelf = self;
+    if (self.JHeaderRefreshEnable && !self.tableView.mj_header) {
+        self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+            self.offset = @"0";
+            [weakSelf _fetchDataWithOffset:self.offset];
+        }];
+    }
+    
+    if (self.JFooterRefreshEnable && !self.tableView.mj_footer) {
+        self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+            [weakSelf _fetchDataWithOffset:self.offset];
+        }];
+    }
+   
+}
+
+#pragma mark - JRListFetching
+- (void)_fetchDataWithOffset:(NSString *)offset
+{
+    self.fetchingOperation = [self fetchDataWithOffset:offset];
+}
+
+-(void)finishFetchWithModels:(NSArray *)models offset:(NSString *)offset hasMore:(BOOL)hasMore{
+    [super finishFetchWithModels:models offset:offset hasMore:hasMore];
+    
+    [self.tableView.mj_header endRefreshing];//结束下拉刷新
+    [self.tableView.mj_footer endRefreshing];//结束加载更多
+    
+}
+
+-(void)failedToFetchingDataWithError:(NSError *)error{
+    [super failedToFetchingDataWithError:error];
+    
 }
 
 
