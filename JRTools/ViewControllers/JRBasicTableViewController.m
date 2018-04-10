@@ -30,11 +30,20 @@
  */
 @property (nonatomic, copy) NSString *offset;
 
+/**
+ 是否已经刷新
+ */
+@property (nonatomic,assign) BOOL hasRereshed;
+
+
 
 @end
 
 @implementation JRBasicTableViewController
 @synthesize models = _models;
+@synthesize JFooterRefreshEnable = _JFooterRefreshEnable;
+@synthesize AutomaticRefreshWhenPresented = _AutomaticRefreshWhenPresented;
+@synthesize JHeaderRefreshEnable = _JHeaderRefreshEnable;
 
 #pragma mark - lazy
 
@@ -106,10 +115,16 @@
 }
 
 -(void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
+    
     [self _addRefreshViewIfNeeded];
     
+    if (!_hasRereshed && _AutomaticRefreshWhenPresented) {
+        self.hasRereshed = YES;
+        [self beginRefresh];
+    }
 }
+
+
 
 -(void)dealloc{
     
@@ -182,7 +197,7 @@
         return;
     }
 
-    if (![modelClass isSubclassOfClass:JRBasicModel.class] && modelClass != JRBasicModel.class) {
+    if (![modelClass isSubclassOfClass:JRBasicModel.class] &&  [modelClass isSubclassOfClass:JRBasicModel.class] && modelClass != JRBasicModel.class) {
         
         NSLog(@"Failed to register model and cell classes to JRBasicTableViewController. %@ is not the subclass of JRBasicModel.", modelClass);
         return;
@@ -298,13 +313,22 @@
 }
 
 #pragma mark - JRListFetching
+
+-(void)beginRefresh{
+    
+    // 在加载更多的过程中刷新，取消原有请求
+    if (self.fetchingOperation) [self.fetchingOperation cancel];
+      [self _fetchDataWithOffset:self.offset];
+    
+}
+
 - (void)_fetchDataWithOffset:(NSString *)offset
 {
     self.fetchingOperation = [self fetchDataWithOffset:offset];
 }
 
 -(void)finishFetchWithModels:(NSArray *)models offset:(NSString *)offset hasMore:(BOOL)hasMore{
-    [super finishFetchWithModels:models offset:offset hasMore:hasMore];
+
     
     [self.tableView.mj_header endRefreshing];//结束下拉刷新
     [self.tableView.mj_footer endRefreshing];//结束加载更多
@@ -312,8 +336,7 @@
 }
 
 -(void)failedToFetchingDataWithError:(NSError *)error{
-    [super failedToFetchingDataWithError:error];
-    
+    //暂未实现
 }
 
 

@@ -7,7 +7,8 @@
 //
 
 #import "JRBasicTableViewController.h"
+#import "JRTableViewController.h"
 
-@interface JRPeronalTableViewController : JRBasicTableViewController
+@interface JRPeronalTableViewController : JRTableViewController
 
 @end

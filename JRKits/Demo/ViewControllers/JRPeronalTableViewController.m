@@ -29,13 +29,13 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"个人信息";
-    
-    NSArray* models = @[@{@"name":@"james"},@{@"name":@"james"},@{@"name":@"james"}];
-    
+
+   NSArray* models = @[@{@"name":@"james"},@{@"name":@"james"},@{@"name":@"james"}];
+
    NSArray* temp =  [NSArray yy_modelArrayWithClass:[JRPersonalModel class] json:models];
-    
+
     [self.models addObjectsFromArray:temp];
-    
+
     [self.tableView reloadData];
     
     // Do any additional setup after loading the view.
@@ -57,6 +57,7 @@
     [self.navigationController pushViewController:vc animated:YES];
     
 }
+
 
 #pragma mark -- inheritMethod
 -(NSOperation *)fetchDataWithOffset:(NSString *)offset{

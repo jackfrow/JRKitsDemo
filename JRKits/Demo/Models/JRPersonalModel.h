@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Jabber. All rights reserved.
 //
 
-#import "JRBasicModel.h"
+#import "JRYYModel.h"
 
-@interface JRPersonalModel : JRBasicModel
+@interface JRPersonalModel : JRYYModel
 
 @property (nonatomic,copy) NSString *name;
 

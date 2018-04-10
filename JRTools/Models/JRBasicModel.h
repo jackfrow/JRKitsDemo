@@ -6,11 +6,10 @@
 //  Copyright © 2018年 Jabber. All rights reserved.
 //
 
-#import <YYModel.h>
+#import <Foundation/Foundation.h>
 
-/**
- 实现yymodel协议，如果对象想要实现深度copy,只需调用YYCopy
- */
-@interface JRBasicModel : NSObject<YYModel>
+@interface JRBasicModel : NSObject<NSCopying,NSCoding>
+
+@property (nonatomic, copy) NSString *identifier;
 
 @end

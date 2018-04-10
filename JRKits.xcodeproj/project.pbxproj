@@ -21,6 +21,9 @@
 		453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133B207A17D000EBFB73 /* JRinitKit.m */; };
 		453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133C207A17D000EBFB73 /* JRTabberConfig.m */; };
 		453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */; };
+		4552A6D7207C55E4006340E5 /* JRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6D6207C55E4006340E5 /* JRBaseModel.m */; };
+		4552A6DB207C5922006340E5 /* NSDictionary+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */; };
+		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
 		45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DB742079ADD700D36EB5 /* JRTools.podspec */; };
 		45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB782079B27100D36EB5 /* JRTableViewController.m */; };
 		45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */; };
@@ -71,6 +74,13 @@
 		453C133D207A17D000EBFB73 /* JRTabberConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTabberConfig.h; sourceTree = "<group>"; };
 		453C1340207A21E700EBFB73 /* UINavigationBar+JRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JRAddtion.h"; sourceTree = "<group>"; };
 		453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JRAddtion.m"; sourceTree = "<group>"; };
+		4552A6D5207C55E4006340E5 /* JRBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBaseModel.h; sourceTree = "<group>"; };
+		4552A6D6207C55E4006340E5 /* JRBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBaseModel.m; sourceTree = "<group>"; };
+		4552A6D8207C56B7006340E5 /* JRJSONTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRJSONTransformation.h; sourceTree = "<group>"; };
+		4552A6D9207C5922006340E5 /* NSDictionary+JRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JRAddition.h"; sourceTree = "<group>"; };
+		4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JRAddition.m"; sourceTree = "<group>"; };
+		4552A6DC207C5A1C006340E5 /* JRYYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRYYModel.h; sourceTree = "<group>"; };
+		4552A6DD207C5A1C006340E5 /* JRYYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRYYModel.m; sourceTree = "<group>"; };
 		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
 		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 			children = (
 				45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */,
 				45004280207B189500308E45 /* JRListFetching.h */,
+				4552A6D8207C56B7006340E5 /* JRJSONTransformation.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -299,6 +310,10 @@
 				9250474C207235D6002D750D /* JRBasicModel.m */,
 				9250474D207235D6002D750D /* JRBasicModel.h */,
 				9222F7B3207319870044F173 /* JRModelAttach.h */,
+				4552A6D5207C55E4006340E5 /* JRBaseModel.h */,
+				4552A6D6207C55E4006340E5 /* JRBaseModel.m */,
+				4552A6DC207C5A1C006340E5 /* JRYYModel.h */,
+				4552A6DD207C5A1C006340E5 /* JRYYModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,6 +359,8 @@
 				4500428B207B52EC00308E45 /* UIViewController+JRAddition.m */,
 				4500428D207B5AFE00308E45 /* UIImage+JRAddition.h */,
 				4500428E207B5AFE00308E45 /* UIImage+JRAddition.m */,
+				4552A6D9207C5922006340E5 /* NSDictionary+JRAddition.h */,
+				4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -497,10 +514,13 @@
 				4500428C207B52EC00308E45 /* UIViewController+JRAddition.m in Sources */,
 				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
+				4552A6DB207C5922006340E5 /* NSDictionary+JRAddition.m in Sources */,
 				45004286207B4BC300308E45 /* UIBarButtonItem+JRAddtion.m in Sources */,
+				4552A6D7207C55E4006340E5 /* JRBaseModel.m in Sources */,
 				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
 				453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */,
 				45004292207B600000308E45 /* TestViewController.m in Sources */,
+				4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */,
 				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,
 				45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,

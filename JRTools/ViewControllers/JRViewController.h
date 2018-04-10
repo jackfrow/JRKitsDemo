@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JRListFetching.h"
+
 #import <Masonry.h>
 
-@interface JRViewController : UIViewController<JRListFetching>
+@interface JRViewController : UIViewController
+
+{
+    UIImageView *_guideView;
+}
+
+@property(nonatomic, assign, readonly) CGFloat screenScale;//尺寸等比放缩参数
+
+- (void)loadGuideViewIfNeed;//新手引导重写此组方法
+- (void)guideViewDismiss;
 
 @end
