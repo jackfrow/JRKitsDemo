@@ -9,6 +9,9 @@
 #import "JRBasicTableViewController.h"
 #import "JRModelAttach.h"
 #import <MJRefresh.h>
+#import "JRBasicTableViewCell.h"
+#import "NSError+JRAddition.h"
+#import "UIViewController+JRAddition.h"
 
 
 @interface JRBasicTableViewController ()
@@ -205,12 +208,10 @@
 
     
     [self.tableView registerNib:nibIndentifier forCellReuseIdentifier:NSStringFromClass(cellClass)];
-
     
     [self registerModelClass:modelClass mappedCellBlock:^Class(id model) {
         return cellClass;
     }];
-    
     
 }
 
@@ -254,10 +255,11 @@
     
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 44;
-    
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    JRBasicModel *model = [self modelAtIndexPath:indexPath];
+    Class cellClass = [self mappedCellClassForModel:model];
+    return [cellClass cellHeightWithModel:model contentWidth:tableView.bounds.size.width];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -329,14 +331,30 @@
 
 -(void)finishFetchWithModels:(NSArray *)models offset:(NSString *)offset hasMore:(BOOL)hasMore{
 
-    
-    [self.tableView.mj_header endRefreshing];//结束下拉刷新
-    [self.tableView.mj_footer endRefreshing];//结束加载更多
+    [self endRefresh];
+
     
 }
 
 -(void)failedToFetchingDataWithError:(NSError *)error{
-    //暂未实现
+    
+    [self endRefresh];
+    
+    if (!error.isCanceledRequestError) {
+        [self showFailureError:error];
+    }
+    
+}
+
+
+/**
+ 结束刷新
+ */
+-(void)endRefresh{
+    
+    [self.tableView.mj_header endRefreshing];//结束下拉刷新
+    [self.tableView.mj_footer endRefreshing];//结束加载更多
+    
 }
 
 

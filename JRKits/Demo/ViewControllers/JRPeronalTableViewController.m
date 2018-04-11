@@ -28,9 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"个人信息";
+    self.navigationItem.title = @"首页";
 
-   NSArray* models = @[@{@"name":@"james"},@{@"name":@"james"},@{@"name":@"james"}];
+   NSArray* models = @[@{@"name":@"james"},@{@"name":@"jack"},@{@"name":@"lee"}];
 
    NSArray* temp =  [NSArray yy_modelArrayWithClass:[JRPersonalModel class] json:models];
 
@@ -38,8 +38,9 @@
 
     [self.tableView reloadData];
     
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.r
 }
+
 
 -(void)loadCellModelMapping{
     
@@ -65,7 +66,7 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self finishFetchWithModels:@[] offset:@"1" hasMore:YES];
+        [self failedToFetchingDataWithError:[NSError errorWithDomain:NSCocoaErrorDomain code:NSURLErrorUnsupportedURL userInfo:nil]];
         
     });
     

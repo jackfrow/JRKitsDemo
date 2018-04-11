@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JRBasicTableViewCell">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JRPersonalTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="413" height="149"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -40,7 +40,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="-160.5" y="-296.5"/>
+            <connections>
+                <outlet property="NameLabel" destination="dUP-mj-GD8" id="Iba-CX-4Tg"/>
+            </connections>
+            <point key="canvasLocation" x="-82" y="-323"/>
         </view>
     </objects>
     <resources>

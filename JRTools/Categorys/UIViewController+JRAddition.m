@@ -10,6 +10,7 @@
 #import "UIImage+JRAddition.h"
 #import "UIColor+JRAddition.h"
 #import "UIBarButtonItem+JRAddtion.h"
+#import <AFNetworkReachabilityManager.h>
 
 #define kTXBackgroundTag 69669
 
@@ -55,6 +56,52 @@
     
     //    return [UIImage imageNamed:@"bg"];
     return [UIImage imageFromColor:[UIColor viewControllerBackgroundColor]];
+}
+
+-(BOOL)showFailureError:(NSError *)error{
+    
+  return   [self showFailureError:error withAlert:YES];
+}
+
+-(BOOL)showFailureError:(NSError *)error withAlert:(BOOL)withAlert{
+    
+    if (![AFNetworkReachabilityManager sharedManager].reachable ||
+        error.code == NSURLErrorNotConnectedToInternet) {
+       //无网络连接
+        return YES;
+    }
+    else if (error.code == NSURLErrorUnsupportedURL) {
+        // Illegal URL, proving that getServerAddress API isn't called successfully.
+        return YES;
+    }
+    else if (error.code == NSURLErrorTimedOut) {
+        // Time out
+        return YES;
+    }
+    else if (error.code == NSURLErrorCannotDecodeContentData ||
+             [error.domain isEqualToString:NSCocoaErrorDomain]) {
+        // Possibly PHP internal error html fetched.
+    }
+//    else if ([error.domain isEqualToString:XIMHTTPClientErrorDomain]) {
+//        NSString *description = error.userInfo[@"description"];
+//        if (description.length) {
+//            if (!withAlert) {
+//                [self dismissLoadingHUDWithFailureText:description];
+//            }
+//            else {
+//                [self dismissLoadingHUD];
+//                RIButtonItem *cancel = [RIButtonItem itemWithLabel:@"确定"];
+//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:description message:nil cancelButtonItem:cancel otherButtonItems:nil, nil];
+//                [alertView show];
+//            }
+//            return YES;
+//        }
+//    }
+    else {
+        return NO;
+    }
+    return NO;
+    
 }
 
 @end

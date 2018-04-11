@@ -24,6 +24,8 @@
 		4552A6D7207C55E4006340E5 /* JRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6D6207C55E4006340E5 /* JRBaseModel.m */; };
 		4552A6DB207C5922006340E5 /* NSDictionary+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */; };
 		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
+		4552A75B207CAD92006340E5 /* NSError+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75A207CAD92006340E5 /* NSError+JRAddition.m */; };
+		4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75D207CC518006340E5 /* JRMessageViewController.m */; };
 		45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DB742079ADD700D36EB5 /* JRTools.podspec */; };
 		45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB782079B27100D36EB5 /* JRTableViewController.m */; };
 		45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */; };
@@ -81,6 +83,10 @@
 		4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JRAddition.m"; sourceTree = "<group>"; };
 		4552A6DC207C5A1C006340E5 /* JRYYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRYYModel.h; sourceTree = "<group>"; };
 		4552A6DD207C5A1C006340E5 /* JRYYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRYYModel.m; sourceTree = "<group>"; };
+		4552A759207CAD92006340E5 /* NSError+JRAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+JRAddition.h"; sourceTree = "<group>"; };
+		4552A75A207CAD92006340E5 /* NSError+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+JRAddition.m"; sourceTree = "<group>"; };
+		4552A75C207CC518006340E5 /* JRMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMessageViewController.h; sourceTree = "<group>"; };
+		4552A75D207CC518006340E5 /* JRMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMessageViewController.m; sourceTree = "<group>"; };
 		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
 		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 				453C1335207A0DCA00EBFB73 /* JRPeronalTableViewController.m */,
 				45004290207B600000308E45 /* TestViewController.h */,
 				45004291207B600000308E45 /* TestViewController.m */,
+				4552A75C207CC518006340E5 /* JRMessageViewController.h */,
+				4552A75D207CC518006340E5 /* JRMessageViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,6 +369,8 @@
 				4500428E207B5AFE00308E45 /* UIImage+JRAddition.m */,
 				4552A6D9207C5922006340E5 /* NSDictionary+JRAddition.h */,
 				4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */,
+				4552A759207CAD92006340E5 /* NSError+JRAddition.h */,
+				4552A75A207CAD92006340E5 /* NSError+JRAddition.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -507,6 +517,7 @@
 				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
 				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
 				453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */,
+				4552A75B207CAD92006340E5 /* NSError+JRAddition.m in Sources */,
 				9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */,
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
@@ -522,6 +533,7 @@
 				45004292207B600000308E45 /* TestViewController.m in Sources */,
 				4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */,
 				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,
+				4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */,
 				45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,

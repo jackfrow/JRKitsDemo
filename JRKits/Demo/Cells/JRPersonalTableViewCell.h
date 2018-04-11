@@ -8,6 +8,8 @@
 
 #import "JRBasicTableViewCell.h"
 
+
 @interface JRPersonalTableViewCell : JRBasicTableViewCell
+
 
 @end

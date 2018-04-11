@@ -7,8 +7,31 @@
 //
 
 #import "JRPersonalTableViewCell.h"
+#import "JRPersonalModel.h"
+
+@interface JRPersonalTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *NameLabel;
+
+@end
 
 @implementation JRPersonalTableViewCell
+
+#pragma mark - inherit
++ (CGFloat)cellHeightWithModel:(JRBasicModel *)model contentWidth:(CGFloat)contentWidth{
+    
+    return 100;
+    
+}
+
+-(void)setModel:(JRBasicModel *)model{
+    [super setModel:model];
+    if ([model isMemberOfClass:[JRPersonalModel class]]) {
+        JRPersonalModel *item = (JRPersonalModel *)model;
+        self.NameLabel.text = item.name;
+    }
+}
+
 
 
 - (void)awakeFromNib {

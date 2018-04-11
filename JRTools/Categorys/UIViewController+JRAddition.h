@@ -29,4 +29,9 @@
  */
 - (UIImage *)tx_edgesToEdgesBackgroundImage;
 
+// Handle the failure error and return YES if it is handled by the implementation.
+- (BOOL)showFailureError:(NSError *)error __attribute__((objc_requires_super));
+- (BOOL)showFailureError:(NSError *)error withAlert:(BOOL)withAlert __attribute__((objc_requires_super));
+
+
 @end

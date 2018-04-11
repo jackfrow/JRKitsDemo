@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import <Masonry.h>
 
 @interface JRViewController : UIViewController

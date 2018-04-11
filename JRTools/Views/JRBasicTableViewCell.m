@@ -57,33 +57,51 @@ static NSMutableDictionary *__calculatorCellsMap = nil;
     }
 }
 
+
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.backgroundView = [[UIView alloc] initWithFrame:self.contentView.bounds];
-        self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        self.backgroundView.backgroundColor = [UIColor clearColor];
-        
-        self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.contentView.bounds];
-        self.selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        self.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.1];
-        
-        self.contentView.backgroundColor = [UIColor clearColor];
-        self.backgroundColor = [UIColor clearColor];
-        
-        self.separatorView = [[BFMLineView alloc] initWithOrientation:BFMLineViewOrientationHorizontal
-                                                                width:0.5
-                                                               length:self.contentView.width];
-        self.separatorView.gradientSolidRatio = 0.05;
-        self.separatorView.gradientEmptyRation = 0.1;
-        self.separatorView.lineColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.1];
-        [self.contentView addSubview:self.separatorView];
+        [self addContent];
     }
     return self;
 }
 
+-(void)awakeFromNib{
+    [super awakeFromNib];
+    [self addContent];
+}
+
+
+/**
+ 下划线
+ */
+-(void)addContent{
+    
+    self.backgroundView = [[UIView alloc] initWithFrame:self.contentView.bounds];
+    self.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.backgroundView.backgroundColor = [UIColor clearColor];
+    
+    self.selectedBackgroundView = [[UIView alloc] initWithFrame:self.contentView.bounds];
+    self.selectedBackgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.1];
+    
+    self.contentView.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
+    
+    self.separatorView = [[BFMLineView alloc] initWithOrientation:BFMLineViewOrientationHorizontal
+                                                            width:0.5
+                                                           length:self.contentView.width];
+    self.separatorView.gradientSolidRatio = 0.05;
+    self.separatorView.gradientEmptyRation = 0.1;
+    self.separatorView.lineColor = [UIColor redColor];
+    [self.contentView addSubview:self.separatorView];
+}
+
+
 - (void)layoutSubviews
 {
+    
     [super layoutSubviews];
     
     if (!self.separatorView.isHidden) {

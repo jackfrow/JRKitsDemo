@@ -8,7 +8,6 @@
 
 #import "JRTabberConfig.h"
 #import "JRBasicNavigationController.h"
-#import "JRPeronalTableViewController.h"
 
 @interface JRTabberConfig()
 
@@ -36,7 +35,7 @@
     
     NSMutableArray* temps = [@[] mutableCopy];
     
-    NSArray* classString = @[@"JRPeronalTableViewController",@"JRPeronalTableViewController",@"JRPeronalTableViewController"];
+    NSArray* classString = @[@"JRPeronalTableViewController",@"JRMessageViewController"];
     
     UIViewController* tempViewController;
     
@@ -71,14 +70,32 @@
 
 - (NSArray *)tabBarItemsAttributesForController {
     
-    NSDictionary *peronalVc = @{CYLTabBarItemTitle : @"个人信息1",CYLTabBarItemImage : @"settings-32",CYLTabBarItemSelectedImage : @"settings-32"};
-
-       NSDictionary *peronalVc1 = @{CYLTabBarItemTitle : @"个人信息2",CYLTabBarItemImage : @"settings-32",CYLTabBarItemSelectedImage : @"settings-32"};
-    
-       NSDictionary *peronalVc2 = @{CYLTabBarItemTitle : @"个人信息3",CYLTabBarItemImage : @"settings-32",CYLTabBarItemSelectedImage : @"settings-32"};
-    
-    NSArray *tabBarItemsAttributes = @[peronalVc,peronalVc1,peronalVc2];
-    
+    NSDictionary *firstTabBarItemsAttributes = @{
+                                                 //                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemImage : @"home_normal",  /* NSString and UIImage are supported*/
+                                                 CYLTabBarItemSelectedImage : @"home_highlight", /* NSString and UIImage are supported*/
+                                                 };
+//    NSDictionary *secondTabBarItemsAttributes = @{
+//                                                  //                                                  CYLTabBarItemTitle : @"同城",
+//                                                  CYLTabBarItemImage : @"mycity_normal",
+//                                                  CYLTabBarItemSelectedImage : @"mycity_highlight",
+//                                                  };
+    NSDictionary *thirdTabBarItemsAttributes = @{
+                                                 //                                                 CYLTabBarItemTitle : @"消息",
+                                                 CYLTabBarItemImage : @"message_normal",
+                                                 CYLTabBarItemSelectedImage : @"message_highlight",
+                                                 };
+//    NSDictionary *fourthTabBarItemsAttributes = @{
+//                                                  //                                                  CYLTabBarItemTitle : @"我的",
+//                                                  CYLTabBarItemImage : @"account_normal",
+//                                                  CYLTabBarItemSelectedImage : @"account_highlight"
+//                                                  };
+    NSArray *tabBarItemsAttributes = @[
+                                       firstTabBarItemsAttributes,
+//                                       secondTabBarItemsAttributes,
+                                       thirdTabBarItemsAttributes,
+//                                       fourthTabBarItemsAttributes
+                                       ];
     return tabBarItemsAttributes;
 }
 
