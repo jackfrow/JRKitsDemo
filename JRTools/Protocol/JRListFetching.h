@@ -39,7 +39,7 @@
  子类重写这个方法来完成获取数据的请求发起。父类会在需要刷新的时候调用此方法。
  PS:子类不要调用这个方法，等着被掉就行
  */
--(NSOperation*)fetchDataWithOffset:(NSString*)offset;
+-(NSURLSessionTask*)fetchDataWithOffset:(NSString*)offset;
 
 
 /**

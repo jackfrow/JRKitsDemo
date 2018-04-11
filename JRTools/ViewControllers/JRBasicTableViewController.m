@@ -25,7 +25,7 @@
 /**
  请求的Operation.
  */
-@property (nonatomic, weak) NSOperation *fetchingOperation;
+@property (nonatomic, weak) NSURLSessionTask *fetchingTask;
 
 
 /**
@@ -133,7 +133,7 @@
     
     self.tableView.delegate = nil;
     self.tableView.dataSource = nil;
-    [self.fetchingOperation cancel];
+    [self.fetchingTask cancel];
     
 }
 
@@ -319,14 +319,14 @@
 -(void)beginRefresh{
     
     // 在加载更多的过程中刷新，取消原有请求
-    if (self.fetchingOperation) [self.fetchingOperation cancel];
+    if (self.fetchingTask) [self.fetchingTask cancel];
       [self _fetchDataWithOffset:self.offset];
     
 }
 
 - (void)_fetchDataWithOffset:(NSString *)offset
 {
-    self.fetchingOperation = [self fetchDataWithOffset:offset];
+    self.fetchingTask = [self fetchDataWithOffset:offset];
 }
 
 -(void)finishFetchWithModels:(NSArray *)models offset:(NSString *)offset hasMore:(BOOL)hasMore{

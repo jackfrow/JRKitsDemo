@@ -26,6 +26,9 @@
 		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
 		4552A75B207CAD92006340E5 /* NSError+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75A207CAD92006340E5 /* NSError+JRAddition.m */; };
 		4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75D207CC518006340E5 /* JRMessageViewController.m */; };
+		45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845784207DE01C00F7F346 /* JRHTTPClient.m */; };
+		45845789207DED2D00F7F346 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845788207DED2D00F7F346 /* DomainManager.m */; };
+		45845790207E152200F7F346 /* JRUploadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584578F207E152200F7F346 /* JRUploadData.m */; };
 		45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DB742079ADD700D36EB5 /* JRTools.podspec */; };
 		45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB782079B27100D36EB5 /* JRTableViewController.m */; };
 		45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */; };
@@ -87,6 +90,13 @@
 		4552A75A207CAD92006340E5 /* NSError+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+JRAddition.m"; sourceTree = "<group>"; };
 		4552A75C207CC518006340E5 /* JRMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMessageViewController.h; sourceTree = "<group>"; };
 		4552A75D207CC518006340E5 /* JRMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMessageViewController.m; sourceTree = "<group>"; };
+		45845783207DE01C00F7F346 /* JRHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRHTTPClient.h; sourceTree = "<group>"; };
+		45845784207DE01C00F7F346 /* JRHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRHTTPClient.m; sourceTree = "<group>"; };
+		45845787207DED2D00F7F346 /* DomainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
+		45845788207DED2D00F7F346 /* DomainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainManager.m; sourceTree = "<group>"; };
+		4584578D207DFE9600F7F346 /* JRNetworkDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRNetworkDefine.h; sourceTree = "<group>"; };
+		4584578E207E152200F7F346 /* JRUploadData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUploadData.h; sourceTree = "<group>"; };
+		4584578F207E152200F7F346 /* JRUploadData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUploadData.m; sourceTree = "<group>"; };
 		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
 		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
@@ -202,15 +212,24 @@
 		453C1339207A162C00EBFB73 /* AppRoot */ = {
 			isa = PBXGroup;
 			children = (
+				4500427E207B0D1900308E45 /* JRTools.h */,
 				453C133A207A17D000EBFB73 /* JRinitKit.h */,
 				453C133B207A17D000EBFB73 /* JRinitKit.m */,
 				453C133D207A17D000EBFB73 /* JRTabberConfig.h */,
 				453C133C207A17D000EBFB73 /* JRTabberConfig.m */,
-				4500427E207B0D1900308E45 /* JRTools.h */,
 				45004293207B697700308E45 /* JRBasicNavigationController.h */,
 				45004294207B697700308E45 /* JRBasicNavigationController.m */,
 			);
 			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		45845786207DE49F00F7F346 /* JRDomainManager */ = {
+			isa = PBXGroup;
+			children = (
+				45845787207DED2D00F7F346 /* DomainManager.h */,
+				45845788207DED2D00F7F346 /* DomainManager.m */,
+			);
+			path = JRDomainManager;
 			sourceTree = "<group>";
 		};
 		45B5DB732079AD9100D36EB5 /* Support */ = {
@@ -252,6 +271,7 @@
 		92311A7B2072205A0016D9B7 /* JRKits */ = {
 			isa = PBXGroup;
 			children = (
+				45845786207DE49F00F7F346 /* JRDomainManager */,
 				453C132A207A0CDC00EBFB73 /* Demo */,
 				45B5DB732079AD9100D36EB5 /* Support */,
 				92504746207235D6002D750D /* JRTools */,
@@ -275,7 +295,7 @@
 				9222F7B420731CDB0044F173 /* Generic */,
 				92504747207235D6002D750D /* EXPand */,
 				92504748207235D6002D750D /* Tools */,
-				9250474A207235D6002D750D /* DateExchange */,
+				9250474A207235D6002D750D /* JRNetWorkHandle */,
 				9250474B207235D6002D750D /* Models */,
 				9250474E207235D6002D750D /* ViewControllers */,
 				92504753207235D6002D750D /* Views */,
@@ -305,11 +325,16 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		9250474A207235D6002D750D /* DateExchange */ = {
+		9250474A207235D6002D750D /* JRNetWorkHandle */ = {
 			isa = PBXGroup;
 			children = (
+				45845783207DE01C00F7F346 /* JRHTTPClient.h */,
+				45845784207DE01C00F7F346 /* JRHTTPClient.m */,
+				4584578D207DFE9600F7F346 /* JRNetworkDefine.h */,
+				4584578E207E152200F7F346 /* JRUploadData.h */,
+				4584578F207E152200F7F346 /* JRUploadData.m */,
 			);
-			path = DateExchange;
+			path = JRNetWorkHandle;
 			sourceTree = "<group>";
 		};
 		9250474B207235D6002D750D /* Models */ = {
@@ -522,6 +547,8 @@
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,
 				45004283207B450E00308E45 /* JRViewController.m in Sources */,
+				45845790207E152200F7F346 /* JRUploadData.m in Sources */,
+				45845789207DED2D00F7F346 /* DomainManager.m in Sources */,
 				4500428C207B52EC00308E45 /* UIViewController+JRAddition.m in Sources */,
 				9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */,
 				92311A8C2072205B0016D9B7 /* main.m in Sources */,
@@ -540,6 +567,7 @@
 				45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */,
 				45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */,
 				45004289207B513600308E45 /* UIColor+JRAddition.m in Sources */,
+				45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */,
 				453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */,
 				4500428F207B5AFE00308E45 /* UIImage+JRAddition.m in Sources */,
 				9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */,

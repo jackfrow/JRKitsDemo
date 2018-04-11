@@ -11,6 +11,7 @@
 #import "UIColor+JRAddition.h"
 #import "UIBarButtonItem+JRAddtion.h"
 #import <AFNetworkReachabilityManager.h>
+#import "JRHTTPClient.h"
 
 #define kTXBackgroundTag 69669
 
@@ -82,21 +83,9 @@
              [error.domain isEqualToString:NSCocoaErrorDomain]) {
         // Possibly PHP internal error html fetched.
     }
-//    else if ([error.domain isEqualToString:XIMHTTPClientErrorDomain]) {
-//        NSString *description = error.userInfo[@"description"];
-//        if (description.length) {
-//            if (!withAlert) {
-//                [self dismissLoadingHUDWithFailureText:description];
-//            }
-//            else {
-//                [self dismissLoadingHUD];
-//                RIButtonItem *cancel = [RIButtonItem itemWithLabel:@"确定"];
-//                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:description message:nil cancelButtonItem:cancel otherButtonItems:nil, nil];
-//                [alertView show];
-//            }
-//            return YES;
-//        }
-//    }
+    else if ([error.domain isEqualToString:JRHTTPClientErrorDomain]) {
+        NSString *description = error.userInfo[@"description"];
+    }
     else {
         return NO;
     }
