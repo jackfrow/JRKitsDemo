@@ -14,6 +14,11 @@ FOUNDATION_EXPORT NSString *const JRHTTPClientErrorDomain;
 
 @interface JRHTTPClient : NSObject
 
+/**
+ 当前网络状态
+ */
+@property (nonatomic,assign) JRNetworkStatus networkStatus;
+
 + (instancetype)sharedClient;
 
 /**

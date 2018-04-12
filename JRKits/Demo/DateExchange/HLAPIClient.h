@@ -13,4 +13,7 @@
 //请求百度数据
 JR_DEFINE_API(Baidu);
 
+//更新头像
+JR_DEFINE_PARAMS_API(uploadHeader:(NSMutableArray *)images);
+
 @end

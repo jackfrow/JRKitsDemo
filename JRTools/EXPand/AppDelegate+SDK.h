@@ -10,4 +10,6 @@
 
 @interface AppDelegate (SDK)
 
+- (void)detectNetworkStaus;
+
 @end

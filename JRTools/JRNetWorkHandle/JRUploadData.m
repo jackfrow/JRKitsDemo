@@ -12,6 +12,7 @@
 
 @implementation JRUploadData
 
+
 - (NSString*)md5String:(NSString*)str
 {
     const char *cStr = [str UTF8String];
@@ -43,7 +44,7 @@
 
 - (NSString *)mimeType
 {
-    return @"image/png";
+    return @"image/jpeg/png/jpg";
 }
 
 - (CGFloat)quality

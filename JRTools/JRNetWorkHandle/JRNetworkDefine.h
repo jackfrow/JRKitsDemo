@@ -28,11 +28,17 @@ failure(error); \
 }\
 }
 
+#define JR_HTTP_ERROR ^(NSError *error) { \
+if (failure) { \
+failure(error); \
+}\
+}
+
 #define JR_DEFINE_API(METHOD) \
 - (NSURLSessionTask*)METHOD ## Success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure
 
 #define JR_DEFINE_PARAMS_API(METHOD) \
-- (NSURLSessionTask*)METHOD success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure
+- (NSURLSessionTask*)METHOD success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure\
 
 /**
  *  网络状态

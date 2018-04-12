@@ -28,6 +28,8 @@
 		4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75D207CC518006340E5 /* JRMessageViewController.m */; };
 		45714FB0207F3C8600A18B0F /* HLHTTPClitent.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FAF207F3C8600A18B0F /* HLHTTPClitent.m */; };
 		45714FB3207F3D8700A18B0F /* HLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FB2207F3D8700A18B0F /* HLAPIClient.m */; };
+		45714FB8207F60F800A18B0F /* DSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FB5207F60F800A18B0F /* DSToast.m */; };
+		45714FB9207F60F800A18B0F /* DSToastAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FB7207F60F800A18B0F /* DSToastAnimation.m */; };
 		45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845784207DE01C00F7F346 /* JRHTTPClient.m */; };
 		45845789207DED2D00F7F346 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845788207DED2D00F7F346 /* DomainManager.m */; };
 		45845790207E152200F7F346 /* JRUploadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584578F207E152200F7F346 /* JRUploadData.m */; };
@@ -96,6 +98,10 @@
 		45714FAF207F3C8600A18B0F /* HLHTTPClitent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLHTTPClitent.m; sourceTree = "<group>"; };
 		45714FB1207F3D8700A18B0F /* HLAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAPIClient.h; sourceTree = "<group>"; };
 		45714FB2207F3D8700A18B0F /* HLAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAPIClient.m; sourceTree = "<group>"; };
+		45714FB4207F60F800A18B0F /* DSToastAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSToastAnimation.h; path = DSToast/DSToastAnimation.h; sourceTree = "<group>"; };
+		45714FB5207F60F800A18B0F /* DSToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSToast.m; path = DSToast/DSToast.m; sourceTree = "<group>"; };
+		45714FB6207F60F800A18B0F /* DSToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSToast.h; path = DSToast/DSToast.h; sourceTree = "<group>"; };
+		45714FB7207F60F800A18B0F /* DSToastAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSToastAnimation.m; path = DSToast/DSToastAnimation.m; sourceTree = "<group>"; };
 		45845783207DE01C00F7F346 /* JRHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRHTTPClient.h; sourceTree = "<group>"; };
 		45845784207DE01C00F7F346 /* JRHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRHTTPClient.m; sourceTree = "<group>"; };
 		45845787207DED2D00F7F346 /* DomainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
@@ -346,6 +352,10 @@
 		9250474A207235D6002D750D /* JRNetWorkHandle */ = {
 			isa = PBXGroup;
 			children = (
+				45714FB6207F60F800A18B0F /* DSToast.h */,
+				45714FB5207F60F800A18B0F /* DSToast.m */,
+				45714FB4207F60F800A18B0F /* DSToastAnimation.h */,
+				45714FB7207F60F800A18B0F /* DSToastAnimation.m */,
 				45845783207DE01C00F7F346 /* JRHTTPClient.h */,
 				45845784207DE01C00F7F346 /* JRHTTPClient.m */,
 				4584578D207DFE9600F7F346 /* JRNetworkDefine.h */,
@@ -586,10 +596,12 @@
 				45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
+				45714FB9207F60F800A18B0F /* DSToastAnimation.m in Sources */,
 				45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */,
 				45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */,
 				45004289207B513600308E45 /* UIColor+JRAddition.m in Sources */,
 				45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */,
+				45714FB8207F60F800A18B0F /* DSToast.m in Sources */,
 				453C1333207A0D9F00EBFB73 /* JRPersonalModel.m in Sources */,
 				4500428F207B5AFE00308E45 /* UIImage+JRAddition.m in Sources */,
 				9222F7BD20731FB20044F173 /* UIView+Category.m in Sources */,

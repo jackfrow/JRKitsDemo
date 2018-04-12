@@ -12,12 +12,23 @@
 
 -(NSURLSessionTask *)BaiduSuccess:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure{
 
-//    http://staging.admin.hilife.sg/service/api_user/svcAboutYou
-return  [self POST:@"https://www.baidu.com" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id responseObject) {
+//    http://staging.admin.hilife.sg/service/api_user/scvGetMyPayMents
+//https://www.baidu.com
+return  [self POST:@"http://staging.admin.hilife.sg/service/api_user/scvGetMyPayMents" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id responseObject) {
     
     if (success) success(responseObject);
     
     } failure:JR_HTTP_FAILURE];
+    
+}
+
+-(NSURLSessionTask *)uploadHeader:(NSMutableArray *)images success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure{
+    
+    return [self uploadWithImageArray:images url:@"http://staging.admin.hilife.sg/service/api_user/svcUploadHeadPortrait" params:nil showHUD:YES progressBlock:nil successBlock:^(id responseObject) {
+        if (success) {
+            success(responseObject);
+        }
+    } failBlock:JR_HTTP_ERROR];
     
     
 }

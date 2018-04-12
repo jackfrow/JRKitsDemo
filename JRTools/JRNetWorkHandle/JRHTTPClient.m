@@ -11,6 +11,7 @@
 #import <AFHTTPSessionManager.h>
 #import "JRUploadData.h"
 #import <SVProgressHUD.h>
+#import "DSToast.h"
 
 NSString *const JRHTTPClientErrorDomain = @"com.jr.http.error";
 
@@ -21,12 +22,9 @@ NSString* const JR_ERROR_COMMON  = @"网络出现错误，请检查网络连接"
 
 @interface JRHTTPClient()
 
-@property (nonatomic,readwrite,assign) JRNetworkStatus networkStatus;
 
 @end
 
-//当前网络状态
-static JRNetworkStatus networkStatus;
 // 默认超时时间
 #define JR_REQUEST_TIMEOUT 30.f
 
@@ -57,16 +55,19 @@ static JRNetworkStatus networkStatus;
     manager.responseSerializer = [AFJSONResponseSerializer serializer];//响应结果配置
     manager.requestSerializer.stringEncoding = NSUTF8StringEncoding;//编码方式
     // 将token加到http头里
+    
+    [manager.requestSerializer setValue:@"ae728a37e13f6f71f1c85e8f82d31c61" forHTTPHeaderField:@"API-User-Token"];
+    
     if ([JRHTTPClient sharedClient].baseToken.length) {
         [manager.requestSerializer setValue:[JRHTTPClient sharedClient].baseToken forHTTPHeaderField:@"token"];
     }
     /**
      *  取出NULL值
      */
-//    AFJSONResponseSerializer *serializer = [AFJSONResponseSerializer serializer];
-//    [serializer setRemovesKeysWithNullValues:YES];
+    AFJSONResponseSerializer *serializer = [AFJSONResponseSerializer serializer];
+    [serializer setRemovesKeysWithNullValues:YES];
     
-    //设置可接受数据的类型
+//    设置可接受数据的类型
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
                                                                               @"text/html",
                                                                               @"text/json",
@@ -79,7 +80,7 @@ static JRNetworkStatus networkStatus;
     //设置请求超时时间
     manager.requestSerializer.timeoutInterval = [JRHTTPClient sharedClient].requestTimeout;
     //检测网络状态
-    [self detectNetworkStaus];
+//    [self detectNetworkStaus];
     
     return manager;
 }
@@ -89,26 +90,26 @@ static JRNetworkStatus networkStatus;
  检测网络状态
  */
 - (void)detectNetworkStaus {
-    AFNetworkReachabilityManager *reachabilityManager = [AFNetworkReachabilityManager sharedManager];
-    [reachabilityManager startMonitoring];
-    [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        //在这里可以定义网络状态切换的提示
-        if (status == AFNetworkReachabilityStatusNotReachable){//无网络连接
-            networkStatus = JRNetworkStatusNotReachable;
-        }else if (status == AFNetworkReachabilityStatusUnknown){//未知网络
-            networkStatus = JRNetworkStatusUnknown;
-        }else if (status == AFNetworkReachabilityStatusReachableViaWWAN){//流量
-            networkStatus = JRNetworkStatusWWAN;
-        }else if (status == AFNetworkReachabilityStatusReachableViaWiFi){//WIFI
-            networkStatus = JRNetworkStatusWIFI;
-        }
-    }];
+//    AFNetworkReachabilityManager *reachabilityManager = [AFNetworkReachabilityManager sharedManager];
+//    [reachabilityManager startMonitoring];
+//    [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        //在这里可以定义网络状态切换的提示
+//        if (status == AFNetworkReachabilityStatusNotReachable){//无网络连接
+//            _networkStatus = JRNetworkStatusNotReachable;
+//        }else if (status == AFNetworkReachabilityStatusUnknown){//未知网络
+//            _networkStatus = JRNetworkStatusUnknown;
+//        }else if (status == AFNetworkReachabilityStatusReachableViaWWAN){//流量
+//            _networkStatus = JRNetworkStatusWWAN;
+//        }else if (status == AFNetworkReachabilityStatusReachableViaWiFi){//WIFI
+//            _networkStatus = JRNetworkStatusWIFI;
+//        }
+//    }];
 }
 
 
 -(BOOL)isAvaiableWithResponse:(NSDictionary *)responseObject{
     
-    BOOL availabel = responseObject && [responseObject[@"ok"] boolValue];
+    BOOL availabel = responseObject && [responseObject[@"error"] intValue] == 0;
 //    if (responseObject[@"servertime"]) {//服务器时间
 //        NSDate *standardDate = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"servertime"] integerValue]];
 //        [NSDate setStandardDate:standardDate currentDate:[NSDate date]];
@@ -136,7 +137,7 @@ static JRNetworkStatus networkStatus;
 -(NSURLSessionTask *)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
     
     // 请求前先判断是否有网络
-    if (networkStatus == JRNetworkStatusUnknown ||  networkStatus == JRNetworkStatusNotReachable) {
+    if (_networkStatus == JRNetworkStatusUnknown ||  _networkStatus == JRNetworkStatusNotReachable) {
         failure ? failure(nil,JR_ERROR) : nil;
         return nil;
     }
@@ -171,7 +172,7 @@ static JRNetworkStatus networkStatus;
 -(NSURLSessionTask *)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *, NSError *))failure{
     
     // 请求前先判断是否有网络
-    if (networkStatus == JRNetworkStatusUnknown ||  networkStatus == JRNetworkStatusNotReachable) {
+    if (_networkStatus == JRNetworkStatusUnknown ||  _networkStatus == JRNetworkStatusNotReachable) {
         failure ? failure(nil,JR_ERROR) : nil;
         return nil;
     }
@@ -202,7 +203,7 @@ static JRNetworkStatus networkStatus;
 -(NSURLSessionTask *)uploadWithImageArray:(NSMutableArray *)imageArray url:(NSString *)url params:(NSDictionary *)params showHUD:(BOOL)showHUD progressBlock:(JRHTTPClientProgressBlock)progressBlock successBlock:(JRHTTPClientSuccessBlock)successBlock failBlock:(JRHTTPClientFailureBlock)failBlock{
     
     // 请求前先判断是否有网络
-    if (networkStatus == JRNetworkStatusUnknown ||  networkStatus == JRNetworkStatusNotReachable) {
+    if (_networkStatus == JRNetworkStatusUnknown ||  _networkStatus == JRNetworkStatusNotReachable) {
         failBlock ? failBlock(JR_ERROR) : nil;
         return nil;
     }
@@ -234,12 +235,16 @@ static JRNetworkStatus networkStatus;
             progressBlock(uploadProgress.completedUnitCount, uploadProgress.totalUnitCount);
         }
         
-        if (showHUD) {
-            [SVProgressHUD showProgress:uploadProgress.fractionCompleted];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (showHUD) {
+                [SVProgressHUD showProgress:uploadProgress.fractionCompleted];
+            }
+        });
+        
+      
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        [SVProgressHUD dismiss];
         [[AFNetworkActivityIndicatorManager sharedManager] decrementActivityCount];
         BOOL available = [weakSelf isAvaiableWithResponse:responseObject];
         if (successBlock && available) {
@@ -250,7 +255,7 @@ static JRNetworkStatus networkStatus;
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [SVProgressHUD dismiss];
         if (failBlock) {
             failBlock(error);
         }
@@ -263,7 +268,7 @@ static JRNetworkStatus networkStatus;
 -(NSURLSessionTask *)uploadFileWithUrl:(NSString *)url uploadingFile:(NSString *)uploadingFile showHUD:(BOOL)showHUD progressBlock:(JRHTTPClientProgressBlock)progressBlock successBlock:(JRHTTPClientSuccessBlock)successBlock failBlock:(JRHTTPClientFailureBlock)failBlock{
     
     // 请求前先判断是否有网络
-    if (networkStatus == JRNetworkStatusUnknown ||  networkStatus == JRNetworkStatusNotReachable) {
+    if (_networkStatus == JRNetworkStatusUnknown ||  _networkStatus == JRNetworkStatusNotReachable) {
         failBlock ? failBlock(JR_ERROR) : nil;
         return nil;
     }
