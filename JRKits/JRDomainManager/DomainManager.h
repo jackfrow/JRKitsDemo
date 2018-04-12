@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DomainModel.h"
+#import <UIKit/UIKit.h>
+
 
 @interface DomainManager : NSObject
 
@@ -15,7 +18,15 @@
  */
 + (instancetype)sharedManager;
 
+/**
+ 设置管理器的第一响应者
+ */
+- (void) managerRegisterFirstResponder:(id) responder;
 
-
+/**
+ 跳转并回调选择后的地址
+ */
++ (void) actionManagerPresentVC:(UIViewController *) viewController
+                completionBlock:(void (^)(DomainModel *model))successBlock;
 
 @end

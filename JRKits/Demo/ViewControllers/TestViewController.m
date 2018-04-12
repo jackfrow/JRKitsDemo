@@ -10,6 +10,7 @@
 #import "HLAPIClient.h"
 #import "JRUploadData.h"
 #import "DSToast.h"
+#import "DomainManager.h"
 
 @interface TestViewController ()<UIImagePickerControllerDelegate>
 
@@ -30,6 +31,28 @@
 
     
     [add addTarget:self action:@selector(selectImage) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton* domain =[UIButton buttonWithType:UIButtonTypeSystem];
+    
+     [domain addTarget:self action:@selector(showDomain) forControlEvents:UIControlEventTouchUpInside];
+    
+    [domain setTitle:@"域名控制" forState:UIControlStateNormal];
+    
+    
+    domain.frame = CGRectMake(200, 400, 100, 50);
+    
+    [self.view addSubview:domain];
+   
+    
+}
+
+-(void)showDomain{
+    
+    [DomainManager actionManagerPresentVC:self completionBlock:^(DomainModel *model) {
+        
+        [[DSToast toastWithText:[NSString stringWithFormat:@"已经切换至%@",   model.name]] show];
+        
+    }];
     
 }
 

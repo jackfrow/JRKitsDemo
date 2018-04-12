@@ -45,11 +45,17 @@
 		92311A862072205A0016D9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92311A852072205A0016D9B7 /* Assets.xcassets */; };
 		92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92311A872072205A0016D9B7 /* LaunchScreen.storyboard */; };
 		92311A8C2072205B0016D9B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92311A8B2072205B0016D9B7 /* main.m */; };
+		92404324207F943C002AE347 /* DomainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92404323207F943C002AE347 /* DomainModel.m */; };
+		92404328207F9749002AE347 /* DomainManagerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 92404327207F9749002AE347 /* DomainManagerVc.m */; };
+		9240432A207F9772002AE347 /* DomainManagerVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92404329207F9772002AE347 /* DomainManagerVc.xib */; };
+		9240432E207FA87B002AE347 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9240432D207FA87A002AE347 /* Reachability.m */; };
+		92404333207FA892002AE347 /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 92404331207FA891002AE347 /* CoreStatus.m */; };
 		92504755207235D6002D750D /* JRBasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250474C207235D6002D750D /* JRBasicModel.m */; };
 		92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504750207235D6002D750D /* JRBasicTableViewController.m */; };
 		92504757207235D6002D750D /* JRBasicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504751207235D6002D750D /* JRBasicCollectionViewController.m */; };
 		9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92504759207238BB002D750D /* JRBasicTableViewCell.m */; };
 		9250475D207238D8002D750D /* JRBasicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9250475C207238D8002D750D /* JRBasicCollectionViewCell.m */; };
+		92E6A7C8207F7FBE00E850B3 /* UIViewController+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6A7C7207F7FBE00E850B3 /* UIViewController+Shake.m */; };
 		F36459308B44C6B074CB0E16 /* libPods-JRKits.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE9527ED46E3A667081D728 /* libPods-JRKits.a */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +140,18 @@
 		92311A882072205A0016D9B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92311A8A2072205A0016D9B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92311A8B2072205B0016D9B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92404322207F943C002AE347 /* DomainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainModel.h; sourceTree = "<group>"; };
+		92404323207F943C002AE347 /* DomainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainModel.m; sourceTree = "<group>"; };
+		92404326207F9749002AE347 /* DomainManagerVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainManagerVc.h; sourceTree = "<group>"; };
+		92404327207F9749002AE347 /* DomainManagerVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainManagerVc.m; sourceTree = "<group>"; };
+		92404329207F9772002AE347 /* DomainManagerVc.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DomainManagerVc.xib; sourceTree = "<group>"; };
+		9240432B207FA86D002AE347 /* CoreStatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreStatusSingleton.h; path = CoreStatus/Lib/Singleton/CoreStatusSingleton.h; sourceTree = "<group>"; };
+		9240432C207FA87A002AE347 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = CoreStatus/Lib/Reachability/Reachability.h; sourceTree = "<group>"; };
+		9240432D207FA87A002AE347 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = CoreStatus/Lib/Reachability/Reachability.m; sourceTree = "<group>"; };
+		9240432F207FA88A002AE347 /* CoreStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreStatusProtocol.h; path = CoreStatus/Lib/CoreStatusProtocol.h; sourceTree = "<group>"; };
+		92404330207FA88A002AE347 /* CoreNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreNetworkStatus.h; path = CoreStatus/Lib/CoreNetworkStatus.h; sourceTree = "<group>"; };
+		92404331207FA891002AE347 /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreStatus.m; path = CoreStatus/CoreStatus.m; sourceTree = "<group>"; };
+		92404332207FA891002AE347 /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreStatus.h; path = CoreStatus/CoreStatus.h; sourceTree = "<group>"; };
 		92504749207235D6002D750D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		9250474C207235D6002D750D /* JRBasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBasicModel.m; sourceTree = "<group>"; };
 		9250474D207235D6002D750D /* JRBasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBasicModel.h; sourceTree = "<group>"; };
@@ -145,6 +163,8 @@
 		92504759207238BB002D750D /* JRBasicTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBasicTableViewCell.m; sourceTree = "<group>"; };
 		9250475B207238D8002D750D /* JRBasicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBasicCollectionViewCell.h; sourceTree = "<group>"; };
 		9250475C207238D8002D750D /* JRBasicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBasicCollectionViewCell.m; sourceTree = "<group>"; };
+		92E6A7C6207F7FBE00E850B3 /* UIViewController+Shake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Shake.h"; sourceTree = "<group>"; };
+		92E6A7C7207F7FBE00E850B3 /* UIViewController+Shake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Shake.m"; sourceTree = "<group>"; };
 		A8554D6539FB41115E14FC80 /* Pods-JRKits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRKits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRKits/Pods-JRKits.debug.xcconfig"; sourceTree = "<group>"; };
 		B0310B35B8409575038E27BC /* Pods-JRKits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRKits.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRKits/Pods-JRKits.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,8 +270,20 @@
 		45845786207DE49F00F7F346 /* JRDomainManager */ = {
 			isa = PBXGroup;
 			children = (
+				92404325207F96F5002AE347 /* Resources */,
+				92404332207FA891002AE347 /* CoreStatus.h */,
+				92404331207FA891002AE347 /* CoreStatus.m */,
+				92404330207FA88A002AE347 /* CoreNetworkStatus.h */,
+				9240432F207FA88A002AE347 /* CoreStatusProtocol.h */,
+				9240432C207FA87A002AE347 /* Reachability.h */,
+				9240432D207FA87A002AE347 /* Reachability.m */,
+				9240432B207FA86D002AE347 /* CoreStatusSingleton.h */,
 				45845787207DED2D00F7F346 /* DomainManager.h */,
 				45845788207DED2D00F7F346 /* DomainManager.m */,
+				92404322207F943C002AE347 /* DomainModel.h */,
+				92404323207F943C002AE347 /* DomainModel.m */,
+				92404326207F9749002AE347 /* DomainManagerVc.h */,
+				92404327207F9749002AE347 /* DomainManagerVc.m */,
 			);
 			path = JRDomainManager;
 			sourceTree = "<group>";
@@ -311,6 +343,14 @@
 			path = JRKits;
 			sourceTree = "<group>";
 		};
+		92404325207F96F5002AE347 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92404329207F9772002AE347 /* DomainManagerVc.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		92504746207235D6002D750D /* JRTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +377,8 @@
 				9222F7B02073189B0044F173 /* AppDelegate+Notification.m */,
 				453C1340207A21E700EBFB73 /* UINavigationBar+JRAddtion.h */,
 				453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */,
+				92E6A7C6207F7FBE00E850B3 /* UIViewController+Shake.h */,
+				92E6A7C7207F7FBE00E850B3 /* UIViewController+Shake.m */,
 			);
 			path = EXPand;
 			sourceTree = "<group>";
@@ -500,6 +542,7 @@
 			files = (
 				45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */,
 				453C1338207A0DF600EBFB73 /* JRPersonalTableViewCell.xib in Resources */,
+				9240432A207F9772002AE347 /* DomainManagerVc.xib in Resources */,
 				92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */,
 				92311A862072205A0016D9B7 /* Assets.xcassets in Resources */,
 			);
@@ -568,6 +611,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92404333207FA892002AE347 /* CoreStatus.m in Sources */,
+				92404324207F943C002AE347 /* DomainModel.m in Sources */,
 				453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */,
 				45714FB3207F3D8700A18B0F /* HLAPIClient.m in Sources */,
 				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
@@ -591,11 +636,14 @@
 				453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */,
 				45004292207B600000308E45 /* TestViewController.m in Sources */,
 				4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */,
+				92E6A7C8207F7FBE00E850B3 /* UIViewController+Shake.m in Sources */,
 				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,
 				4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */,
 				45004295207B697700308E45 /* JRBasicNavigationController.m in Sources */,
 				9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */,
+				9240432E207FA87B002AE347 /* Reachability.m in Sources */,
 				92311A7E2072205A0016D9B7 /* AppDelegate.m in Sources */,
+				92404328207F9749002AE347 /* DomainManagerVc.m in Sources */,
 				45714FB9207F60F800A18B0F /* DSToastAnimation.m in Sources */,
 				45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */,
 				45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */,
