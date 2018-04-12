@@ -26,6 +26,8 @@
 		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
 		4552A75B207CAD92006340E5 /* NSError+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75A207CAD92006340E5 /* NSError+JRAddition.m */; };
 		4552A75E207CC518006340E5 /* JRMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A75D207CC518006340E5 /* JRMessageViewController.m */; };
+		45714FB0207F3C8600A18B0F /* HLHTTPClitent.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FAF207F3C8600A18B0F /* HLHTTPClitent.m */; };
+		45714FB3207F3D8700A18B0F /* HLAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45714FB2207F3D8700A18B0F /* HLAPIClient.m */; };
 		45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845784207DE01C00F7F346 /* JRHTTPClient.m */; };
 		45845789207DED2D00F7F346 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845788207DED2D00F7F346 /* DomainManager.m */; };
 		45845790207E152200F7F346 /* JRUploadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584578F207E152200F7F346 /* JRUploadData.m */; };
@@ -90,6 +92,10 @@
 		4552A75A207CAD92006340E5 /* NSError+JRAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+JRAddition.m"; sourceTree = "<group>"; };
 		4552A75C207CC518006340E5 /* JRMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRMessageViewController.h; sourceTree = "<group>"; };
 		4552A75D207CC518006340E5 /* JRMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRMessageViewController.m; sourceTree = "<group>"; };
+		45714FAE207F3C8600A18B0F /* HLHTTPClitent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLHTTPClitent.h; sourceTree = "<group>"; };
+		45714FAF207F3C8600A18B0F /* HLHTTPClitent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLHTTPClitent.m; sourceTree = "<group>"; };
+		45714FB1207F3D8700A18B0F /* HLAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAPIClient.h; sourceTree = "<group>"; };
+		45714FB2207F3D8700A18B0F /* HLAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAPIClient.m; sourceTree = "<group>"; };
 		45845783207DE01C00F7F346 /* JRHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRHTTPClient.h; sourceTree = "<group>"; };
 		45845784207DE01C00F7F346 /* JRHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRHTTPClient.m; sourceTree = "<group>"; };
 		45845787207DED2D00F7F346 /* DomainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainManager.h; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		453C132A207A0CDC00EBFB73 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				45714FAD207F3C1B00A18B0F /* DateExchange */,
 				453C132D207A0CF800EBFB73 /* Cells */,
 				453C132C207A0CEF00EBFB73 /* ViewControllers */,
 				453C132B207A0CE900EBFB73 /* Models */,
@@ -221,6 +228,17 @@
 				45004294207B697700308E45 /* JRBasicNavigationController.m */,
 			);
 			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		45714FAD207F3C1B00A18B0F /* DateExchange */ = {
+			isa = PBXGroup;
+			children = (
+				45714FAE207F3C8600A18B0F /* HLHTTPClitent.h */,
+				45714FAF207F3C8600A18B0F /* HLHTTPClitent.m */,
+				45714FB1207F3D8700A18B0F /* HLAPIClient.h */,
+				45714FB2207F3D8700A18B0F /* HLAPIClient.m */,
+			);
+			path = DateExchange;
 			sourceTree = "<group>";
 		};
 		45845786207DE49F00F7F346 /* JRDomainManager */ = {
@@ -521,10 +539,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JRKits/Pods-JRKits-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -539,10 +559,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */,
+				45714FB3207F3D8700A18B0F /* HLAPIClient.m in Sources */,
 				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
 				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
 				453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */,
 				4552A75B207CAD92006340E5 /* NSError+JRAddition.m in Sources */,
+				45714FB0207F3C8600A18B0F /* HLHTTPClitent.m in Sources */,
 				9222F7B12073189B0044F173 /* AppDelegate+Notification.m in Sources */,
 				92504755207235D6002D750D /* JRBasicModel.m in Sources */,
 				92311A812072205A0016D9B7 /* ViewController.m in Sources */,

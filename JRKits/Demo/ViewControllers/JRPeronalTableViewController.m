@@ -10,6 +10,7 @@
 #import "JRPersonalTableViewCell.h"
 #import "JRPersonalModel.h"
 #import "TestViewController.h"
+#import "HLAPIClient.h"
 
 @interface JRPeronalTableViewController ()
 
@@ -63,12 +64,20 @@
 #pragma mark -- inheritMethod
 -(NSURLSessionTask *)fetchDataWithOffset:(NSString *)offset{
     
+    return [[HLAPIClient sharedClient] BaiduSuccess:^(id responseObject) {
+        
+        NSLog(@"responseObject = %@",responseObject);
+        
+    } failure:^(NSError *error) {
+        
+        [self failedToFetchingDataWithError:error];
+    }];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        [self failedToFetchingDataWithError:[NSError errorWithDomain:NSCocoaErrorDomain code:NSURLErrorUnsupportedURL userInfo:nil]];
-        
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//
+//
+//
+//    });
     
     return nil;
     

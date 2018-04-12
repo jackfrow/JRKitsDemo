@@ -39,10 +39,10 @@ FOUNDATION_EXPORT NSString *const JRHTTPClientErrorDomain;
 
 #pragma mark --- 请求参数接口
 //POST
-- (NSURLSessionTask *)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success failure:(void (^)(NSURLSessionDataTask *  responseObject, NSError * error))failure;
+- (NSURLSessionTask *)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *  responseObject, NSError * error))failure;
 
 //GET
-- (NSURLSessionTask *)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success failure:(void (^)(NSURLSessionDataTask *  responseObject, NSError * error))failure;
+- (NSURLSessionTask *)GET:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(NSURLSessionDataTask * _Nonnull task, id responseObject))success failure:(void (^)(NSURLSessionDataTask *  responseObject, NSError * error))failure;
 
 
 /**
@@ -55,15 +55,35 @@ FOUNDATION_EXPORT NSString *const JRHTTPClientErrorDomain;
  @param progressBlock    上传进度
  @param successBlock     成功回调
  @param failBlock        失败回调
- @return
  */
 - (NSURLSessionTask *)uploadWithImageArray:(NSMutableArray *)imageArray
                                        url:(NSString *)url
                                     params:(NSDictionary *)params
                                    showHUD:(BOOL)showHUD
-                             progressBlock:(JRHTTPClientSuccessBlock)progressBlock
-                              successBlock:(JRHTTPClientProgressBlock)successBlock
+                             progressBlock:(JRHTTPClientProgressBlock)progressBlock
+                              successBlock:(JRHTTPClientSuccessBlock)successBlock
                                  failBlock:(JRHTTPClientFailureBlock)failBlock;
+
+
+
+
+/**
+ *  文件上传接口
+ *
+ *  @param url              上传文件接口地址
+ *  @param uploadingFile    上传文件路径
+ *  @param progressBlock    上传进度
+ *  @param successBlock     成功回调
+ *  @param failBlock        失败回调
+ *
+ *  @return 返回的对象中可取消请求
+ */
+- (NSURLSessionTask *)uploadFileWithUrl:(NSString *)url
+                          uploadingFile:(NSString *)uploadingFile
+                                showHUD:(BOOL)showHUD
+                          progressBlock:(JRHTTPClientProgressBlock)progressBlock
+                           successBlock:(JRHTTPClientSuccessBlock)successBlock
+                              failBlock:(JRHTTPClientFailureBlock)failBlock;
 
 
 @end

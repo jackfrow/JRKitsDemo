@@ -7,5 +7,6 @@ target 'JRKits' do
   pod 'Masonry'
   pod 'CYLTabBarController'
   pod 'MJRefresh'
+  pod 'SVProgressHUD'
  
 end

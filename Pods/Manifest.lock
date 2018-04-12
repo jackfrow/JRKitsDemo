@@ -17,6 +17,7 @@ PODS:
   - CYLTabBarController (1.17.6)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.3)
+  - SVProgressHUD (2.2.5)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - CYLTabBarController
   - Masonry
   - MJRefresh
+  - SVProgressHUD
   - YYModel
 
 SPEC CHECKSUMS:
@@ -31,8 +33,9 @@ SPEC CHECKSUMS:
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 1cb3317a10d6af22783dd64dbf6196557adbee9a
+PODFILE CHECKSUM: 438fc9968df0d8ae1314f3574dcf556af05a3f48
 
 COCOAPODS: 1.4.0

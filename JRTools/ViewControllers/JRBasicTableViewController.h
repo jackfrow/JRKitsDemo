@@ -27,4 +27,5 @@
  */
 -(void)configureCell:(UITableViewCell<JRModelAttach> *)cell forIndexPath:(NSIndexPath*)indexPath;
 
+
 @end

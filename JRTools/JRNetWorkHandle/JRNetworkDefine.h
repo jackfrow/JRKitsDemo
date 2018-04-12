@@ -13,6 +13,27 @@ typedef void (^JRHTTPClientSuccessBlock)(id responseObject);
 typedef void (^JRHTTPClientFailureBlock)(NSError *error);
 typedef void (^JRHTTPClientProgressBlock)(unsigned long long loadedSize, unsigned long long totalSize);
 
+
+#define JRHTTPErrorDomain @"JRHTTPErrorDomain"
+#define JRHTTPErroCodeParameterInvalid 80000
+
+#define JR_API_PARAMETERS_CHECK(condition) \
+if (!(condition)) { \
+if (failure) failure([NSError errorWithDomain:JRHTTPErrorDomain code:JRHTTPErroCodeParameterInvalid userInfo:nil]); \
+return nil; \
+}
+#define JR_HTTP_FAILURE ^(NSURLSessionDataTask *  task, NSError *error) { \
+if (failure) { \
+failure(error); \
+}\
+}
+
+#define JR_DEFINE_API(METHOD) \
+- (NSURLSessionTask*)METHOD ## Success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure
+
+#define JR_DEFINE_PARAMS_API(METHOD) \
+- (NSURLSessionTask*)METHOD success:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure
+
 /**
  *  网络状态
  */
