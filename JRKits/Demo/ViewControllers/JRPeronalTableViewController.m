@@ -38,14 +38,10 @@
     [self.models addObjectsFromArray:temp];
 
     [self.tableView reloadData];
-    
-    // Do any additional setup after loading the view.r
 }
 
 
 -(void)loadCellModelMapping{
-    
-//    [self registerModelClass:[JRPersonalModel class] mappedCellClass:[JRPersonalTableViewCell class]];
     
     [self registerModelClass:[JRPersonalModel class ] mappedNibIndentifier:[UINib nibWithNibName:@"JRPersonalTableViewCell" bundle:nil] cellClass:[JRPersonalTableViewCell class]];
 }
@@ -57,9 +53,7 @@
     vc.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:vc animated:YES];
-    
 }
-
 
 #pragma mark -- inheritMethod
 -(NSURLSessionTask *)fetchDataWithOffset:(NSString *)offset{
@@ -72,14 +66,6 @@
         
         [self failedToFetchingDataWithError:error];
     }];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//
-//
-//
-//    });
-    
-    return nil;
     
 }
 

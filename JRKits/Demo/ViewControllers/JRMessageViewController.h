@@ -8,6 +8,6 @@
 
 #import "JRBasicCollectionViewController.h"
 
-@interface JRMessageViewController : JRBasicCollectionViewController
+@interface JRMessageViewController : UIViewController
 
 @end

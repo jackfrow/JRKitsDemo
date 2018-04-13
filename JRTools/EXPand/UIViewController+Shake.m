@@ -8,6 +8,8 @@
 
 #import "UIViewController+Shake.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "DomainManager.h"
+#import "DSToast.h"
 
 
 @implementation UIViewController (Shake)
@@ -20,6 +22,12 @@
     //如果有摇动动作，就做相应操作
     if (event.subtype == UIEventSubtypeMotionShake) {
     
+        [DomainManager actionManagerPresentVC:self completionBlock:^(DomainModel *model) {
+            
+            [[DSToast toastWithText:[NSString stringWithFormat:@"已经切换至%@",   model.name]] show];
+            
+        }];
+        
     }
 }
 

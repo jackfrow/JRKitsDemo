@@ -10,8 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "JRTabberConfig.h"
 #import "UINavigationBar+JRAddtion.h"
-#import "AppDelegate+SDK.h"
-
 
 
 @implementation JRinitKit
@@ -32,8 +30,6 @@
     appDelegate.window.rootViewController = tabBarControllerConfig.tabBarController;
     [appDelegate.window makeKeyAndVisible];
     
-    AppDelegate* delegate = (AppDelegate*)appDelegate;
-    [delegate detectNetworkStaus];
 }
 
 

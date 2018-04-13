@@ -41,18 +41,14 @@
     
     domain.frame = CGRectMake(200, 400, 100, 50);
     
-    [self.view addSubview:domain];
+//    [self.view addSubview:domain];
    
     
 }
 
 -(void)showDomain{
     
-    [DomainManager actionManagerPresentVC:self completionBlock:^(DomainModel *model) {
-        
-        [[DSToast toastWithText:[NSString stringWithFormat:@"已经切换至%@",   model.name]] show];
-        
-    }];
+
     
 }
 

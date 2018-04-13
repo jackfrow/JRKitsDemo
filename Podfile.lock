@@ -14,6 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
   - CYLTabBarController (1.17.6)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.3)
@@ -22,6 +28,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - CocoaLumberjack
   - CYLTabBarController
   - Masonry
   - MJRefresh
@@ -30,12 +37,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
   CYLTabBarController: c374643dea6dadece8bdff9c70f7387f8ffd7d08
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 438fc9968df0d8ae1314f3574dcf556af05a3f48
+PODFILE CHECKSUM: 672b3912903368883506671c161ba21eed21caa3
 
 COCOAPODS: 1.4.0

@@ -8,7 +8,21 @@
 
 #import "HLAPIClient.h"
 
+
+
 @implementation HLAPIClient
+
++(instancetype)sharedClient{
+    
+    static dispatch_once_t once;
+    static HLAPIClient *__singleton__;
+    dispatch_once(&once, ^ {
+        __singleton__ = [[self alloc]init];
+        __singleton__.requestTimeout = JR_REQUEST_TIMEOUT;
+    });
+    return __singleton__;
+    
+}
 
 -(NSURLSessionTask *)BaiduSuccess:(JRHTTPClientSuccessBlock)success failure:(JRHTTPClientFailureBlock)failure{
 
@@ -30,7 +44,7 @@ return  [self POST:@"http://staging.admin.hilife.sg/service/api_user/scvGetMyPay
         }
     } failBlock:JR_HTTP_ERROR];
     
-    
 }
+
 
 @end

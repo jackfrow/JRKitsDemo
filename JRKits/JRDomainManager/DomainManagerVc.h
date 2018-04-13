@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DomainModel.h"
 
+extern NSString* const JRDomain;
+
 @interface DomainManagerVc : UIViewController
 
 /**

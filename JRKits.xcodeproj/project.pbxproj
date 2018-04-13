@@ -21,6 +21,8 @@
 		453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133B207A17D000EBFB73 /* JRinitKit.m */; };
 		453C133F207A17D000EBFB73 /* JRTabberConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C133C207A17D000EBFB73 /* JRTabberConfig.m */; };
 		453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */; };
+		454B7F6520804BA500EFCDBB /* MyLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B7F6220804BA400EFCDBB /* MyLogFormatter.m */; };
+		454B7F6620804BA500EFCDBB /* MyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B7F6320804BA400EFCDBB /* MyLogger.m */; };
 		4552A6D7207C55E4006340E5 /* JRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6D6207C55E4006340E5 /* JRBaseModel.m */; };
 		4552A6DB207C5922006340E5 /* NSDictionary+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */; };
 		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
@@ -89,6 +91,10 @@
 		453C133D207A17D000EBFB73 /* JRTabberConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTabberConfig.h; sourceTree = "<group>"; };
 		453C1340207A21E700EBFB73 /* UINavigationBar+JRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+JRAddtion.h"; sourceTree = "<group>"; };
 		453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+JRAddtion.m"; sourceTree = "<group>"; };
+		454B7F6120804BA400EFCDBB /* MyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogger.h; sourceTree = "<group>"; };
+		454B7F6220804BA400EFCDBB /* MyLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogFormatter.m; sourceTree = "<group>"; };
+		454B7F6320804BA400EFCDBB /* MyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogger.m; sourceTree = "<group>"; };
+		454B7F6420804BA400EFCDBB /* MyLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogFormatter.h; sourceTree = "<group>"; };
 		4552A6D5207C55E4006340E5 /* JRBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBaseModel.h; sourceTree = "<group>"; };
 		4552A6D6207C55E4006340E5 /* JRBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBaseModel.m; sourceTree = "<group>"; };
 		4552A6D8207C56B7006340E5 /* JRJSONTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRJSONTransformation.h; sourceTree = "<group>"; };
@@ -256,6 +262,17 @@
 			path = AppRoot;
 			sourceTree = "<group>";
 		};
+		454B7F6020804BA400EFCDBB /* LOG */ = {
+			isa = PBXGroup;
+			children = (
+				454B7F6120804BA400EFCDBB /* MyLogger.h */,
+				454B7F6320804BA400EFCDBB /* MyLogger.m */,
+				454B7F6220804BA400EFCDBB /* MyLogFormatter.m */,
+				454B7F6420804BA400EFCDBB /* MyLogFormatter.h */,
+			);
+			path = LOG;
+			sourceTree = "<group>";
+		};
 		45714FAD207F3C1B00A18B0F /* DateExchange */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +344,7 @@
 		92311A7B2072205A0016D9B7 /* JRKits */ = {
 			isa = PBXGroup;
 			children = (
+				454B7F6020804BA400EFCDBB /* LOG */,
 				45845786207DE49F00F7F346 /* JRDomainManager */,
 				453C132A207A0CDC00EBFB73 /* Demo */,
 				45B5DB732079AD9100D36EB5 /* Support */,
@@ -614,6 +632,7 @@
 				92404333207FA892002AE347 /* CoreStatus.m in Sources */,
 				92404324207F943C002AE347 /* DomainModel.m in Sources */,
 				453C133E207A17D000EBFB73 /* JRinitKit.m in Sources */,
+				454B7F6620804BA500EFCDBB /* MyLogger.m in Sources */,
 				45714FB3207F3D8700A18B0F /* HLAPIClient.m in Sources */,
 				9222F7BA20731D800044F173 /* BFMLineView.m in Sources */,
 				92504756207235D6002D750D /* JRBasicTableViewController.m in Sources */,
@@ -635,6 +654,7 @@
 				9250475A207238BB002D750D /* JRBasicTableViewCell.m in Sources */,
 				453C1330207A0D7C00EBFB73 /* JRPersonalTableViewCell.m in Sources */,
 				45004292207B600000308E45 /* TestViewController.m in Sources */,
+				454B7F6520804BA500EFCDBB /* MyLogFormatter.m in Sources */,
 				4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */,
 				92E6A7C8207F7FBE00E850B3 /* UIViewController+Shake.m in Sources */,
 				453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */,

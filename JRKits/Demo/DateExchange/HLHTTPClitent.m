@@ -10,4 +10,16 @@
 
 @implementation HLHTTPClitent
 
++(instancetype)sharedClient{
+    
+    static dispatch_once_t once;
+    static HLHTTPClitent *__singleton__;
+    dispatch_once(&once, ^ {
+        __singleton__ = [[self alloc]init];
+        __singleton__.requestTimeout = JR_REQUEST_TIMEOUT;
+    });
+    return __singleton__;
+    
+}
+
 @end

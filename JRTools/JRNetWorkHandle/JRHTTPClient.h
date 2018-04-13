@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JRNetworkDefine.h"
 
-
+// 默认超时时间
+#define JR_REQUEST_TIMEOUT 30.f
 FOUNDATION_EXPORT NSString *const JRHTTPClientErrorDomain;
 
 @interface JRHTTPClient : NSObject

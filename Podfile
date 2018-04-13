@@ -8,5 +8,6 @@ target 'JRKits' do
   pod 'CYLTabBarController'
   pod 'MJRefresh'
   pod 'SVProgressHUD'
+  pod 'CocoaLumberjack' #logUtil
  
 end

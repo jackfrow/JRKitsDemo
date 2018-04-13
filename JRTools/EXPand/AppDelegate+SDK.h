@@ -10,6 +10,18 @@
 
 @interface AppDelegate (SDK)
 
+
+/**
+ 启动sdk
+ */
+-(void)sdkRun;
+
+
 - (void)detectNetworkStaus;
+
+/**
+ *  启动ip管理器管理器
+ */
+- (void)setupLocalIPManager;
 
 @end

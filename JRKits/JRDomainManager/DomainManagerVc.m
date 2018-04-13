@@ -9,7 +9,7 @@
 #import "DomainManagerVc.h"
 #import "CoreStatus.h"
 
-NSString* const Domain = @"Domain";
+NSString* const JRDomain = @"Domain";
 
 @interface DomainManagerVc ()<CoreStatusProtocol>
 
@@ -27,7 +27,7 @@ NSString* const Domain = @"Domain";
     
     [self.navigationItem setTitle:@"域名管理"];
     
-    DomainModel* model = [NSKeyedUnarchiver  unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:Domain]];
+    DomainModel* model = [NSKeyedUnarchiver  unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:JRDomain]];
     if (model) {
         self.CurrentLabel.text = model.name;
     }
@@ -101,7 +101,7 @@ NSString* const Domain = @"Domain";
     }
     
     [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:model]
-                                              forKey:Domain];
+                                              forKey:JRDomain];
     [[NSUserDefaults standardUserDefaults] synchronize];//立即同步数据
     
 

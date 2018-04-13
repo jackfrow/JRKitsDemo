@@ -10,9 +10,20 @@
 #import <AFNetworkReachabilityManager.h>
 #import "DSToast.h"
 #import "JRHTTPClient.h"
+#import "DomainManager.h"
+#import "MyLogger.h"
+#import "MyLogFormatter.h"
 
 
 @implementation AppDelegate (SDK)
+
+-(void)sdkRun{
+    [self detectNetworkStaus];
+    
+    [self setupLocalIPManager];
+    
+    [self addLog];
+}
 
 /**
  检测网络状态
@@ -36,6 +47,44 @@
             [JRHTTPClient sharedClient].networkStatus = JRNetworkStatusWIFI;
             [[DSToast toastWithText:@"你已切换至WIFI"] show];        }
     }];
+}
+
+/**
+ *  启动ip管理器管理器
+ */
+- (void)setupLocalIPManager
+{
+    [[DomainManager sharedManager] managerRegisterFirstResponder:self];
+    // IP地址管理
+    DomainModel* model = [NSKeyedUnarchiver  unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@""]];
+    if (model.mainDomain) {
+        [[JRHTTPClient sharedClient] setNormalUrl:model.mainDomain];
+    }else{
+        [[JRHTTPClient sharedClient] setNormalUrl:@"http://staging.admin.hilife.sg/service"];
+    }
+    
+}
+
+
+/**
+ log 日志
+ */
+-(void)addLog{
+    
+    //custom log message
+    MyLogger *logger = [[MyLogger alloc] init];
+    [logger setLogFormatter:[[MyLogFormatter alloc]init]];
+    [DDLog addLogger:logger];
+    
+    [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
+    [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    [DDLog addLogger:fileLogger];
+    
+    
 }
 
 @end

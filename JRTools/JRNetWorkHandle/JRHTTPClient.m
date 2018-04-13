@@ -25,8 +25,7 @@ NSString* const JR_ERROR_COMMON  = @"网络出现错误，请检查网络连接"
 
 @end
 
-// 默认超时时间
-#define JR_REQUEST_TIMEOUT 30.f
+
 
 @implementation JRHTTPClient
 
