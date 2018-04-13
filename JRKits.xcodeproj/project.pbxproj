@@ -23,6 +23,7 @@
 		453C1342207A21E700EBFB73 /* UINavigationBar+JRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C1341207A21E700EBFB73 /* UINavigationBar+JRAddtion.m */; };
 		454B7F6520804BA500EFCDBB /* MyLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B7F6220804BA400EFCDBB /* MyLogFormatter.m */; };
 		454B7F6620804BA500EFCDBB /* MyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B7F6320804BA400EFCDBB /* MyLogger.m */; };
+		454B7F68208087A800EFCDBB /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 454B7F67208087A800EFCDBB /* JRTools.podspec */; };
 		4552A6D7207C55E4006340E5 /* JRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6D6207C55E4006340E5 /* JRBaseModel.m */; };
 		4552A6DB207C5922006340E5 /* NSDictionary+JRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DA207C5922006340E5 /* NSDictionary+JRAddition.m */; };
 		4552A6DE207C5A1C006340E5 /* JRYYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4552A6DD207C5A1C006340E5 /* JRYYModel.m */; };
@@ -95,6 +96,7 @@
 		454B7F6220804BA400EFCDBB /* MyLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogFormatter.m; sourceTree = "<group>"; };
 		454B7F6320804BA400EFCDBB /* MyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogger.m; sourceTree = "<group>"; };
 		454B7F6420804BA400EFCDBB /* MyLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogFormatter.h; sourceTree = "<group>"; };
+		454B7F67208087A800EFCDBB /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		4552A6D5207C55E4006340E5 /* JRBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRBaseModel.h; sourceTree = "<group>"; };
 		4552A6D6207C55E4006340E5 /* JRBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRBaseModel.m; sourceTree = "<group>"; };
 		4552A6D8207C56B7006340E5 /* JRJSONTransformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRJSONTransformation.h; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 		45B5DB732079AD9100D36EB5 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				454B7F67208087A800EFCDBB /* JRTools.podspec */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 			files = (
 				45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */,
 				453C1338207A0DF600EBFB73 /* JRPersonalTableViewCell.xib in Resources */,
+				454B7F68208087A800EFCDBB /* JRTools.podspec in Resources */,
 				9240432A207F9772002AE347 /* DomainManagerVc.xib in Resources */,
 				92311A892072205A0016D9B7 /* LaunchScreen.storyboard in Resources */,
 				92311A862072205A0016D9B7 /* Assets.xcassets in Resources */,
