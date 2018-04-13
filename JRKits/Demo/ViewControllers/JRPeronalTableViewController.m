@@ -60,7 +60,7 @@
     
     return [[HLAPIClient sharedClient] BaiduSuccess:^(id responseObject) {
         
-        NSLog(@"responseObject = %@",responseObject);
+        [self finishFetchWithModels:self.models offset:@"" hasMore:YES];
         
     } failure:^(NSError *error) {
         

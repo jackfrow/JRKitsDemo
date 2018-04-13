@@ -123,8 +123,8 @@ NSString* const JR_ERROR_COMMON  = @"网络出现错误，请检查网络连接"
 + (NSError *)errorWithResponse:(NSDictionary *)response
 {
     NSError *error = nil;
-    NSString *errorDescription = response[@"error"];
-    NSInteger code = [response[@"errorcode"] integerValue];
+    NSString *errorDescription = response[@"message"];
+    NSInteger code = [response[@"error"] integerValue];
     BOOL ok = [response[@"ok"] boolValue];
     if (!ok) {
         NSDictionary *userInfo = @{@"description": errorDescription ?: @"网络错误"};

@@ -76,9 +76,15 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 {
      [[HLAPIClient sharedClient] BaiduSuccess:^(id responseObject) {
         
+         [self.tableView.mj_header endRefreshing];
+         [self.tableView.mj_footer endRefreshing];
+         
         NSLog(@"responseObject = %@",responseObject);
         
     } failure:^(NSError *error) {
+        
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
         
         NSLog(@"error = %@",error.localizedDescription);
     }];
