@@ -121,7 +121,7 @@
 		4584578D207DFE9600F7F346 /* JRNetworkDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRNetworkDefine.h; sourceTree = "<group>"; };
 		4584578E207E152200F7F346 /* JRUploadData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUploadData.h; sourceTree = "<group>"; };
 		4584578F207E152200F7F346 /* JRUploadData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUploadData.m; sourceTree = "<group>"; };
-		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JRTools.podspec; sourceTree = SOURCE_ROOT; };
+		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JRTools.podspec; path = JRTools/EXPand/JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
 		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
 		45B5DB782079B27100D36EB5 /* JRTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRTableViewController.m; sourceTree = "<group>"; };
@@ -308,7 +308,6 @@
 		45B5DB732079AD9100D36EB5 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				45B5DB742079ADD700D36EB5 /* JRTools.podspec */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -349,8 +348,6 @@
 				453C132A207A0CDC00EBFB73 /* Demo */,
 				45B5DB732079AD9100D36EB5 /* Support */,
 				92504746207235D6002D750D /* JRTools */,
-				92311A7C2072205A0016D9B7 /* AppDelegate.h */,
-				92311A7D2072205A0016D9B7 /* AppDelegate.m */,
 				92311A7F2072205A0016D9B7 /* ViewController.h */,
 				92311A802072205A0016D9B7 /* ViewController.m */,
 				92311A852072205A0016D9B7 /* Assets.xcassets */,
@@ -389,6 +386,9 @@
 		92504747207235D6002D750D /* EXPand */ = {
 			isa = PBXGroup;
 			children = (
+				45B5DB742079ADD700D36EB5 /* JRTools.podspec */,
+				92311A7C2072205A0016D9B7 /* AppDelegate.h */,
+				92311A7D2072205A0016D9B7 /* AppDelegate.m */,
 				9222F7AC207318760044F173 /* AppDelegate+SDK.h */,
 				9222F7AD207318760044F173 /* AppDelegate+SDK.m */,
 				9222F7AF2073189B0044F173 /* AppDelegate+Notification.h */,
