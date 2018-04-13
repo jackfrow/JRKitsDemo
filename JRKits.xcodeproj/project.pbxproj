@@ -36,7 +36,6 @@
 		45845785207DE01C00F7F346 /* JRHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845784207DE01C00F7F346 /* JRHTTPClient.m */; };
 		45845789207DED2D00F7F346 /* DomainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45845788207DED2D00F7F346 /* DomainManager.m */; };
 		45845790207E152200F7F346 /* JRUploadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584578F207E152200F7F346 /* JRUploadData.m */; };
-		45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 45B5DB742079ADD700D36EB5 /* JRTools.podspec */; };
 		45B5DB792079B27100D36EB5 /* JRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB782079B27100D36EB5 /* JRTableViewController.m */; };
 		45B5DB7C2079B29100D36EB5 /* JRCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5DB7B2079B29100D36EB5 /* JRCollectionViewController.m */; };
 		9222F7AE207318760044F173 /* AppDelegate+SDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 9222F7AD207318760044F173 /* AppDelegate+SDK.m */; };
@@ -123,7 +122,6 @@
 		4584578D207DFE9600F7F346 /* JRNetworkDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRNetworkDefine.h; sourceTree = "<group>"; };
 		4584578E207E152200F7F346 /* JRUploadData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUploadData.h; sourceTree = "<group>"; };
 		4584578F207E152200F7F346 /* JRUploadData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUploadData.m; sourceTree = "<group>"; };
-		45B5DB742079ADD700D36EB5 /* JRTools.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JRTools.podspec; path = JRTools/EXPand/JRTools.podspec; sourceTree = SOURCE_ROOT; };
 		45B5DB762079B05900D36EB5 /* JRModelCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRModelCellMapping.h; sourceTree = "<group>"; };
 		45B5DB772079B27100D36EB5 /* JRTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRTableViewController.h; sourceTree = "<group>"; };
 		45B5DB782079B27100D36EB5 /* JRTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRTableViewController.m; sourceTree = "<group>"; };
@@ -389,7 +387,6 @@
 		92504747207235D6002D750D /* EXPand */ = {
 			isa = PBXGroup;
 			children = (
-				45B5DB742079ADD700D36EB5 /* JRTools.podspec */,
 				92311A7C2072205A0016D9B7 /* AppDelegate.h */,
 				92311A7D2072205A0016D9B7 /* AppDelegate.m */,
 				9222F7AC207318760044F173 /* AppDelegate+SDK.h */,
@@ -561,7 +558,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B5DB752079ADD700D36EB5 /* JRTools.podspec in Resources */,
 				453C1338207A0DF600EBFB73 /* JRPersonalTableViewCell.xib in Resources */,
 				454B7F68208087A800EFCDBB /* JRTools.podspec in Resources */,
 				9240432A207F9772002AE347 /* DomainManagerVc.xib in Resources */,
