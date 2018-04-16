@@ -205,8 +205,7 @@
         NSLog(@"Failed to register model and cell classes to JRBasicTableViewController. %@ is not the subclass of JRBasicModel.", modelClass);
         return;
     }
-
-    
+   
     [self.tableView registerNib:nibIndentifier forCellReuseIdentifier:NSStringFromClass(cellClass)];
     
     [self registerModelClass:modelClass mappedCellBlock:^Class(id model) {

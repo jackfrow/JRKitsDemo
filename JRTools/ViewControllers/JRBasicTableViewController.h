@@ -21,7 +21,6 @@
 
 @property (nonatomic,strong) UITableView * tableView ;
 
-
 /**
  configure cell with detail situation here.
  */
