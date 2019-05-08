@@ -45,10 +45,10 @@
     
     [self registerModelClass:[JRPersonalModel class ] mappedNibIndentifier:[UINib nibWithNibName:@"JRPersonalTableViewCell" bundle:nil] cellClass:[JRPersonalTableViewCell class]];
     
-    [self registerModelClass:[JRPersonalModel class]  mappedCellBlock:^Class(id model) {
-    
-        return nil;
-    }];
+//    [self registerModelClass:[JRPersonalModel class]  mappedCellBlock:^Class(id model) {
+//
+//        return nil;
+//    }];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
